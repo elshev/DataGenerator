@@ -13,7 +13,7 @@ as
 begin
     declare @tableName sysname;
     declare tableCursor cursor for
-        select name from sys.tables;
+        select name from sys.tables with (nolock);
     open tableCursor;
     fetch next from tableCursor into @tableName;
     while (@@FETCH_STATUS = 0)
