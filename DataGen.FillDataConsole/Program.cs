@@ -10,64 +10,10 @@ using MongoDB.Driver;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 using System.Globalization;
+using DataGen.Entities;
 
 namespace DataGen.FillDataConsole
 {
-    public class Country
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
-        public string Name { get; set; }
-        public string PhoneCode { get; set; }
-        public string IsoCode2 { get; set; }
-        public string IsoCode3 { get; set; }
-        public int Population { get; set; }
-    }
-
-    public class Region
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
-        public string Name { get; set; }
-
-        public ObjectId CountryId { get; set; }
-        [BsonIgnore]
-        public Country Country { get; set; }
-    }
-
-    public class City
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
-        public string Name { get; set; }
-        public string NativeName { get; set; }
-        public int Population { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
-
-        public ObjectId CountryId { get; set; }
-        [BsonIgnore]
-        public Country Country { get; set; }
-
-        public ObjectId RegionId { get; set; }
-        [BsonIgnore]
-        public Region Region { get; set; }
-    }
-
-    public class FirstName
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
-        public string Name { get; set; }
-    }
-
-    public class LastName
-    {
-        [BsonId]
-        public ObjectId Id { get; set; }
-        public string Name { get; set; }
-    }
-
     class Program
     {
         private const string ConnectionString = "mongodb://localhost";
@@ -77,23 +23,6 @@ namespace DataGen.FillDataConsole
 
         private static void Main(string[] args)
         {
-            decimal d = 10.1M;
-            /*ArrayList al = new ArrayList();
-            al.Add(10);
-            al.Add("sf;lkjsdf");
-            al.Add(DateTime.Now);
-
-            object o = al[1];
-
-            List<int> list = new List<int>();
-            list.Remove("asdlkj");
-
-
-            Class1 c1 = new Class1();
-            c1.A();
-            Console.ReadLine();
-            return;*/
-
             //FillCountries();
             FillRegions();
             //FillFirstNames();
