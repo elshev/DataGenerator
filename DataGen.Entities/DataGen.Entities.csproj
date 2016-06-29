@@ -44,12 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="City.cs" />
     <Compile Include="Country.cs" />
+    <Compile Include="NamedEntity.cs" />
     <Compile Include="FirstName.cs" />
     <Compile Include="LastName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Region.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

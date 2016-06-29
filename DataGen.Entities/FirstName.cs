@@ -9,10 +9,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace DataGen.Entities
 {
-    public class FirstName
+    public class FirstName : NamedEntity
     {
-        [BsonId]
-        public ObjectId Id { get; set; }
-        public string Name { get; set; }
     }
 }

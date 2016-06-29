@@ -4,9 +4,14 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DataGen.SqlServer;
 using DataGen.Abstract.Generate;
+using System.Configuration;
 
 namespace DataGen.Tests.Integration
 {
+    internal class TestConnectionStringProvider : IConnectionStringProvider
+    {
+        public string ConnectionString { get { return ConfigurationManager.ConnectionStrings["DataGenTest"].ConnectionString; } }
+    }
     [TestClass]
     public class SqlServerDataGenStrategyTest
     {
@@ -14,7 +19,8 @@ namespace DataGen.Tests.Integration
         public void TestGetTableInfo()
         {
             // Arrange
-            SqlServerDataGenStrategy strategy = new SqlServerDataGenStrategy();
+            IConnectionStringProvider connectionStringProvider = new TestConnectionStringProvider();
+            SqlServerDataGenStrategy strategy = new SqlServerDataGenStrategy(connectionStringProvider);
 
             // Act
             TableInfo tableInfo = strategy.GetTableInfo("create table t5 ( Id int identity(1, 1), Name nvarchar(128) not null, Date datetime null)");
@@ -24,32 +30,35 @@ namespace DataGen.Tests.Integration
             List<ColumnInfo> columns = tableInfo.Columns.ToList();
             Assert.AreEqual(3, columns.Count);
 
-            ColumnInfo columnInfo = columns[0];
-            Assert.AreEqual("Id", columnInfo.Name);
-            Assert.AreEqual(1, columnInfo.ColumnId);
-            //Assert.AreEqual(ColumnType.Int, columnInfo.ColumnType);
-            Assert.IsFalse(columnInfo.IsComputed);
-            Assert.IsTrue(columnInfo.IsIdentity);
-            Assert.IsFalse(columnInfo.IsNullable);
-            Assert.AreEqual(4, columnInfo.MaxLength);
+            IntColumnInfo intColumnInfo = columns[0] as IntColumnInfo;
+            Assert.IsNotNull(intColumnInfo);
+            Assert.AreEqual("Id", intColumnInfo.Name);
+            Assert.AreEqual(1, intColumnInfo.ColumnId);
+            Assert.AreEqual(ColumnType.Int, intColumnInfo.ColumnType);
+            Assert.IsFalse(intColumnInfo.IsComputed);
+            Assert.IsTrue(intColumnInfo.IsIdentity);
+            Assert.IsFalse(intColumnInfo.IsNullable);
+            Assert.AreEqual(4, intColumnInfo.MaxLength);
 
-            columnInfo = columns[1];
-            Assert.AreEqual("Name", columnInfo.Name);
-            Assert.AreEqual(2, columnInfo.ColumnId);
-            //Assert.AreEqual(ColumnType.String, columnInfo.ColumnType);
-            Assert.IsFalse(columnInfo.IsComputed);
-            Assert.IsFalse(columnInfo.IsIdentity);
-            Assert.IsFalse(columnInfo.IsNullable);
-            Assert.AreEqual(256, columnInfo.MaxLength);
+            StringColumnInfo stringColumnInfo = columns[1] as StringColumnInfo;
+            Assert.IsNotNull(stringColumnInfo);
+            Assert.AreEqual("Name", stringColumnInfo.Name);
+            Assert.AreEqual(2, stringColumnInfo.ColumnId);
+            Assert.AreEqual(ColumnType.String, stringColumnInfo.ColumnType);
+            Assert.IsFalse(stringColumnInfo.IsComputed);
+            Assert.IsFalse(stringColumnInfo.IsIdentity);
+            Assert.IsFalse(stringColumnInfo.IsNullable);
+            Assert.AreEqual(256, stringColumnInfo.MaxLength);
 
-            columnInfo = columns[2];
-            Assert.AreEqual("Date", columnInfo.Name);
-            Assert.AreEqual(3, columnInfo.ColumnId);
-            //Assert.AreEqual(ColumnType.DateTime, columnInfo.ColumnType);
-            Assert.IsFalse(columnInfo.IsComputed);
-            Assert.IsFalse(columnInfo.IsIdentity);
-            Assert.IsTrue(columnInfo.IsNullable);
-            Assert.AreEqual(8, columnInfo.MaxLength);
+            DateTimeColumnInfo dateTimeColumnInfo = columns[2] as DateTimeColumnInfo;
+            Assert.IsNotNull(dateTimeColumnInfo);
+            Assert.AreEqual("Date", dateTimeColumnInfo.Name);
+            Assert.AreEqual(3, dateTimeColumnInfo.ColumnId);
+            Assert.AreEqual(ColumnType.DateTime, dateTimeColumnInfo.ColumnType);
+            Assert.IsFalse(dateTimeColumnInfo.IsComputed);
+            Assert.IsFalse(dateTimeColumnInfo.IsIdentity);
+            Assert.IsTrue(dateTimeColumnInfo.IsNullable);
+            Assert.AreEqual(8, dateTimeColumnInfo.MaxLength);
         }
     }
 }

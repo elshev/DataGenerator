@@ -10,14 +10,50 @@ using DataGen.Abstract.Generate;
 
 namespace DataGen.SqlServer
 {
+    public interface IConnectionStringProvider
+    {
+        string ConnectionString { get; }
+    }
+
     public class SqlServerDataGenStrategy
     {
+        private IConnectionStringProvider ConnectionStringProvider { get; }
+
+        public SqlServerDataGenStrategy(IConnectionStringProvider connectionStringProvider)
+        {
+            ConnectionStringProvider = connectionStringProvider;
+        }
+
+        public ColumnInfo CreateColumnInfo(string typeName)
+        {
+            if (string.IsNullOrWhiteSpace(typeName))
+                throw new ArgumentNullException(nameof(typeName));
+
+            switch (typeName)
+            {
+                case "int":
+                    return new IntColumnInfo();
+                case "varchar":
+                case "nvarchar":
+                case "text":
+                case "sysname":
+                    return new StringColumnInfo();
+                case "date":
+                case "time":
+                case "datetime":
+                    return new DateTimeColumnInfo();
+                case "bit":
+                    return new BooleanColumnInfo();
+                default:
+                    return new ColumnInfo();
+            }
+        }
+
         public TableInfo GetTableInfo(string script)
         {
             if (string.IsNullOrWhiteSpace(script))
                 throw new ArgumentNullException(nameof(script));
-            string connectionString = @"server=VADIM-PC\SQLEXPRESS;database=DataGen_0001;integrated security=True;";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionStringProvider.ConnectionString))
             {
                 SqlParameter scriptParam = new SqlParameter("@CreateTableScript", SqlDbType.NVarChar)
                 {
@@ -39,18 +75,17 @@ namespace DataGen.SqlServer
                         List<ColumnInfo> columns = new List<ColumnInfo>();
                         while (reader.Read())
                         {
-                            ColumnInfo columnInfo = new ColumnInfo()
-                            {
-                                Name = reader.GetString(0),
-                                ColumnId = reader.GetInt32(1),
-                                //Name = reader.GetString(2),
-                                MaxLength = reader.GetInt16(3),
-                                Precision = reader.GetByte(4),
-                                Scale = reader.GetByte(5),
-                                IsNullable = reader.GetBoolean(6),
-                                IsIdentity = reader.GetBoolean(7),
-                                IsComputed = reader.GetBoolean(8)
-                            };
+                            string typeName = reader.GetString(2);
+                            ColumnInfo columnInfo = CreateColumnInfo(typeName);
+                            columnInfo.Name = reader.GetString(0);
+                            columnInfo.ColumnId = reader.GetInt32(1);
+                            columnInfo.MaxLength = reader.GetInt16(3);
+                            columnInfo.Precision = reader.GetByte(4);
+                            columnInfo.Scale = reader.GetByte(5);
+                            columnInfo.IsNullable = reader.GetBoolean(6);
+                            columnInfo.IsIdentity = reader.GetBoolean(7);
+                            columnInfo.IsComputed = reader.GetBoolean(8);
+                            
                             columns.Add(columnInfo);
                         }
                         tableInfo.Columns = columns;

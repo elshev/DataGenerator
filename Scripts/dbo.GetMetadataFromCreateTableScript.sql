@@ -1,5 +1,3 @@
-use DataGen_0001;
-
 declare @procName sysname = 'dbo.GetMetadataFromCreateTableScript'
 
 if (isnull(objectproperty(object_id(@procName), 'IsProcedure'), 0) = 0)

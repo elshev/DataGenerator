@@ -8,10 +8,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace DataGen.Entities
 {
-    public class LastName
+    public class LastName : NamedEntity
     {
-        [BsonId]
-        public ObjectId Id { get; set; }
-        public string Name { get; set; }
     }
 }
