@@ -1,0 +1,9 @@
+* // Remove the XML formatter
+    config.Formatters.Remove(config.Formatters.XmlFormatter);
+* Asynchronous controllers
+* Country, Region, City - from one Country for each generated row
+* Column types
+  * Country ISO2
+  * Country ISO3
+* Flexible formats: {Country}, {City}, {CountryIso2} etc.
+* 

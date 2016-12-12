@@ -1,0 +1,1946 @@
+[
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AF",
+    "IsoCode3": "AFG",
+    "PhoneCode": "93",
+    "Name": "Afghanistan",
+    "Id": "584973a62043b14c0c1f9f3d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AL",
+    "IsoCode3": "ALB",
+    "PhoneCode": "355",
+    "Name": "Albania",
+    "Id": "584973a62043b14c0c1f9f3e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "DZ",
+    "IsoCode3": "DZA",
+    "PhoneCode": "213",
+    "Name": "Algeria",
+    "Id": "584973a62043b14c0c1f9f3f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AS",
+    "IsoCode3": "ASM",
+    "PhoneCode": "1-684",
+    "Name": "American Samoa",
+    "Id": "584973a62043b14c0c1f9f40"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AD",
+    "IsoCode3": "AND",
+    "PhoneCode": "376",
+    "Name": "Andorra",
+    "Id": "584973a62043b14c0c1f9f41"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AO",
+    "IsoCode3": "AGO",
+    "PhoneCode": "244",
+    "Name": "Angola",
+    "Id": "584973a62043b14c0c1f9f42"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AG",
+    "IsoCode3": "ATG",
+    "PhoneCode": "1-268",
+    "Name": "Antigua and Barbuda",
+    "Id": "584973a62043b14c0c1f9f45"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AR",
+    "IsoCode3": "ARG",
+    "PhoneCode": "54",
+    "Name": "Argentina",
+    "Id": "584973a62043b14c0c1f9f46"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AM",
+    "IsoCode3": "ARM",
+    "PhoneCode": "374",
+    "Name": "Armenia",
+    "Id": "584973a62043b14c0c1f9f47"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AW",
+    "IsoCode3": "ABW",
+    "PhoneCode": "297",
+    "Name": "Aruba",
+    "Id": "584973a62043b14c0c1f9f48"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AU",
+    "IsoCode3": "AUS",
+    "PhoneCode": "61",
+    "Name": "Australia",
+    "Id": "584973a62043b14c0c1f9f49"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AT",
+    "IsoCode3": "AUT",
+    "PhoneCode": "43",
+    "Name": "Austria",
+    "Id": "584973a62043b14c0c1f9f4a"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AZ",
+    "IsoCode3": "AZE",
+    "PhoneCode": "994",
+    "Name": "Azerbaijan",
+    "Id": "584973a62043b14c0c1f9f4b"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BS",
+    "IsoCode3": "BHS",
+    "PhoneCode": "1-242",
+    "Name": "Bahamas",
+    "Id": "584973a62043b14c0c1f9f4c"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BH",
+    "IsoCode3": "BHR",
+    "PhoneCode": "973",
+    "Name": "Bahrain",
+    "Id": "584973a62043b14c0c1f9f4d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BD",
+    "IsoCode3": "BGD",
+    "PhoneCode": "880",
+    "Name": "Bangladesh",
+    "Id": "584973a62043b14c0c1f9f4e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BB",
+    "IsoCode3": "BRB",
+    "PhoneCode": "1-246",
+    "Name": "Barbados",
+    "Id": "584973a62043b14c0c1f9f4f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BY",
+    "IsoCode3": "BLR",
+    "PhoneCode": "375",
+    "Name": "Belarus",
+    "Id": "584973a62043b14c0c1f9f50"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BE",
+    "IsoCode3": "BEL",
+    "PhoneCode": "32",
+    "Name": "Belgium",
+    "Id": "584973a62043b14c0c1f9f51"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BZ",
+    "IsoCode3": "BLZ",
+    "PhoneCode": "501",
+    "Name": "Belize",
+    "Id": "584973a62043b14c0c1f9f52"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BJ",
+    "IsoCode3": "BEN",
+    "PhoneCode": "229",
+    "Name": "Benin",
+    "Id": "584973a62043b14c0c1f9f53"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BM",
+    "IsoCode3": "BMU",
+    "PhoneCode": "1-441",
+    "Name": "Bermuda",
+    "Id": "584973a62043b14c0c1f9f54"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BT",
+    "IsoCode3": "BTN",
+    "PhoneCode": "975",
+    "Name": "Bhutan",
+    "Id": "584973a62043b14c0c1f9f55"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BO",
+    "IsoCode3": "BOL",
+    "PhoneCode": "591",
+    "Name": "Bolivia",
+    "Id": "584973a62043b14c0c1f9f56"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BA",
+    "IsoCode3": "BIH",
+    "PhoneCode": "387",
+    "Name": "Bosnia and Herzegovina",
+    "Id": "584973a62043b14c0c1f9f57"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BW",
+    "IsoCode3": "BWA",
+    "PhoneCode": "267",
+    "Name": "Botswana",
+    "Id": "584973a62043b14c0c1f9f58"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BR",
+    "IsoCode3": "BRA",
+    "PhoneCode": "55",
+    "Name": "Brazil",
+    "Id": "584973a62043b14c0c1f9f59"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BN",
+    "IsoCode3": "BRN",
+    "PhoneCode": "673",
+    "Name": "Brunei",
+    "Id": "584973a62043b14c0c1f9f5c"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BG",
+    "IsoCode3": "BGR",
+    "PhoneCode": "359",
+    "Name": "Bulgaria",
+    "Id": "584973a62043b14c0c1f9f5d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BF",
+    "IsoCode3": "BFA",
+    "PhoneCode": "226",
+    "Name": "Burkina Faso",
+    "Id": "584973a62043b14c0c1f9f5e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "BI",
+    "IsoCode3": "BDI",
+    "PhoneCode": "257",
+    "Name": "Burundi",
+    "Id": "584973a62043b14c0c1f9f5f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KH",
+    "IsoCode3": "KHM",
+    "PhoneCode": "855",
+    "Name": "Cambodia",
+    "Id": "584973a62043b14c0c1f9f60"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CM",
+    "IsoCode3": "CMR",
+    "PhoneCode": "237",
+    "Name": "Cameroon",
+    "Id": "584973a62043b14c0c1f9f61"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CA",
+    "IsoCode3": "CAN",
+    "PhoneCode": "1",
+    "Name": "Canada",
+    "Id": "584973a62043b14c0c1f9f62"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CV",
+    "IsoCode3": "CPV",
+    "PhoneCode": "238",
+    "Name": "Cape Verde",
+    "Id": "584973a62043b14c0c1f9f63"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KY",
+    "IsoCode3": "CYM",
+    "PhoneCode": "1-345",
+    "Name": "Cayman Islands",
+    "Id": "584973a62043b14c0c1f9f64"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CF",
+    "IsoCode3": "CAF",
+    "PhoneCode": "236",
+    "Name": "Central African Republic",
+    "Id": "584973a62043b14c0c1f9f65"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TD",
+    "IsoCode3": "TCD",
+    "PhoneCode": "235",
+    "Name": "Chad",
+    "Id": "584973a62043b14c0c1f9f66"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CL",
+    "IsoCode3": "CHL",
+    "PhoneCode": "56",
+    "Name": "Chile",
+    "Id": "584973a62043b14c0c1f9f67"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CN",
+    "IsoCode3": "CHN",
+    "PhoneCode": "86",
+    "Name": "China",
+    "Id": "584973a62043b14c0c1f9f68"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CO",
+    "IsoCode3": "COL",
+    "PhoneCode": "57",
+    "Name": "Colombia",
+    "Id": "584973a62043b14c0c1f9f6b"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KM",
+    "IsoCode3": "COM",
+    "PhoneCode": "269",
+    "Name": "Comoros",
+    "Id": "584973a62043b14c0c1f9f6c"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CK",
+    "IsoCode3": "COK",
+    "PhoneCode": "682",
+    "Name": "Cook Islands",
+    "Id": "584973a62043b14c0c1f9f6d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CR",
+    "IsoCode3": "CRI",
+    "PhoneCode": "506",
+    "Name": "Costa Rica",
+    "Id": "584973a62043b14c0c1f9f6e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "HR",
+    "IsoCode3": "HRV",
+    "PhoneCode": "385",
+    "Name": "Croatia",
+    "Id": "584973a62043b14c0c1f9f6f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CU",
+    "IsoCode3": "CUB",
+    "PhoneCode": "53",
+    "Name": "Cuba",
+    "Id": "584973a62043b14c0c1f9f70"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CW",
+    "IsoCode3": "CUW",
+    "PhoneCode": "599",
+    "Name": "Curacao",
+    "Id": "584973a62043b14c0c1f9f71"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CY",
+    "IsoCode3": "CYP",
+    "PhoneCode": "357",
+    "Name": "Cyprus",
+    "Id": "584973a62043b14c0c1f9f72"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CZ",
+    "IsoCode3": "CZE",
+    "PhoneCode": "420",
+    "Name": "Czech Republic",
+    "Id": "584973a62043b14c0c1f9f73"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CD",
+    "IsoCode3": "COD",
+    "PhoneCode": "243",
+    "Name": "Democratic Republic of the Congo",
+    "Id": "584973a62043b14c0c1f9f74"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "DK",
+    "IsoCode3": "DNK",
+    "PhoneCode": "45",
+    "Name": "Denmark",
+    "Id": "584973a62043b14c0c1f9f75"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "DJ",
+    "IsoCode3": "DJI",
+    "PhoneCode": "253",
+    "Name": "Djibouti",
+    "Id": "584973a62043b14c0c1f9f76"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "DM",
+    "IsoCode3": "DMA",
+    "PhoneCode": "1-767",
+    "Name": "Dominica",
+    "Id": "584973a62043b14c0c1f9f77"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "DO",
+    "IsoCode3": "DOM",
+    "PhoneCode": "1-809, 1-829, 1-849",
+    "Name": "Dominican Republic",
+    "Id": "584973a62043b14c0c1f9f78"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TL",
+    "IsoCode3": "TLS",
+    "PhoneCode": "670",
+    "Name": "East Timor",
+    "Id": "584973a62043b14c0c1f9f79"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "EC",
+    "IsoCode3": "ECU",
+    "PhoneCode": "593",
+    "Name": "Ecuador",
+    "Id": "584973a62043b14c0c1f9f7a"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "EG",
+    "IsoCode3": "EGY",
+    "PhoneCode": "20",
+    "Name": "Egypt",
+    "Id": "584973a62043b14c0c1f9f7b"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SV",
+    "IsoCode3": "SLV",
+    "PhoneCode": "503",
+    "Name": "El Salvador",
+    "Id": "584973a62043b14c0c1f9f7c"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GQ",
+    "IsoCode3": "GNQ",
+    "PhoneCode": "240",
+    "Name": "Equatorial Guinea",
+    "Id": "584973a62043b14c0c1f9f7d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ER",
+    "IsoCode3": "ERI",
+    "PhoneCode": "291",
+    "Name": "Eritrea",
+    "Id": "584973a62043b14c0c1f9f7e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "EE",
+    "IsoCode3": "EST",
+    "PhoneCode": "372",
+    "Name": "Estonia",
+    "Id": "584973a62043b14c0c1f9f7f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ET",
+    "IsoCode3": "ETH",
+    "PhoneCode": "251",
+    "Name": "Ethiopia",
+    "Id": "584973a62043b14c0c1f9f80"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "FK",
+    "IsoCode3": "FLK",
+    "PhoneCode": "500",
+    "Name": "Falkland Islands",
+    "Id": "584973a62043b14c0c1f9f81"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "FO",
+    "IsoCode3": "FRO",
+    "PhoneCode": "298",
+    "Name": "Faroe Islands",
+    "Id": "584973a62043b14c0c1f9f82"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "FJ",
+    "IsoCode3": "FJI",
+    "PhoneCode": "679",
+    "Name": "Fiji",
+    "Id": "584973a62043b14c0c1f9f83"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "FI",
+    "IsoCode3": "FIN",
+    "PhoneCode": "358",
+    "Name": "Finland",
+    "Id": "584973a62043b14c0c1f9f84"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "FR",
+    "IsoCode3": "FRA",
+    "PhoneCode": "33",
+    "Name": "France",
+    "Id": "584973a62043b14c0c1f9f85"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PF",
+    "IsoCode3": "PYF",
+    "PhoneCode": "689",
+    "Name": "French Polynesia",
+    "Id": "584973a62043b14c0c1f9f86"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GA",
+    "IsoCode3": "GAB",
+    "PhoneCode": "241",
+    "Name": "Gabon",
+    "Id": "584973a62043b14c0c1f9f87"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GM",
+    "IsoCode3": "GMB",
+    "PhoneCode": "220",
+    "Name": "Gambia",
+    "Id": "584973a62043b14c0c1f9f88"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GE",
+    "IsoCode3": "GEO",
+    "PhoneCode": "995",
+    "Name": "Georgia",
+    "Id": "584973a62043b14c0c1f9f89"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "DE",
+    "IsoCode3": "DEU",
+    "PhoneCode": "49",
+    "Name": "Germany",
+    "Id": "584973a62043b14c0c1f9f8a"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GH",
+    "IsoCode3": "GHA",
+    "PhoneCode": "233",
+    "Name": "Ghana",
+    "Id": "584973a62043b14c0c1f9f8b"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GI",
+    "IsoCode3": "GIB",
+    "PhoneCode": "350",
+    "Name": "Gibraltar",
+    "Id": "584973a62043b14c0c1f9f8c"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GR",
+    "IsoCode3": "GRC",
+    "PhoneCode": "30",
+    "Name": "Greece",
+    "Id": "584973a62043b14c0c1f9f8d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GL",
+    "IsoCode3": "GRL",
+    "PhoneCode": "299",
+    "Name": "Greenland",
+    "Id": "584973a62043b14c0c1f9f8e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GD",
+    "IsoCode3": "GRD",
+    "PhoneCode": "1-473",
+    "Name": "Grenada",
+    "Id": "584973a62043b14c0c1f9f8f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GU",
+    "IsoCode3": "GUM",
+    "PhoneCode": "1-671",
+    "Name": "Guam",
+    "Id": "584973a62043b14c0c1f9f90"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GT",
+    "IsoCode3": "GTM",
+    "PhoneCode": "502",
+    "Name": "Guatemala",
+    "Id": "584973a62043b14c0c1f9f91"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GN",
+    "IsoCode3": "GIN",
+    "PhoneCode": "224",
+    "Name": "Guinea",
+    "Id": "584973a62043b14c0c1f9f93"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GW",
+    "IsoCode3": "GNB",
+    "PhoneCode": "245",
+    "Name": "Guinea-Bissau",
+    "Id": "584973a62043b14c0c1f9f94"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GY",
+    "IsoCode3": "GUY",
+    "PhoneCode": "592",
+    "Name": "Guyana",
+    "Id": "584973a62043b14c0c1f9f95"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "HT",
+    "IsoCode3": "HTI",
+    "PhoneCode": "509",
+    "Name": "Haiti",
+    "Id": "584973a62043b14c0c1f9f96"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "HN",
+    "IsoCode3": "HND",
+    "PhoneCode": "504",
+    "Name": "Honduras",
+    "Id": "584973a62043b14c0c1f9f97"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "HK",
+    "IsoCode3": "HKG",
+    "PhoneCode": "852",
+    "Name": "Hong Kong",
+    "Id": "584973a62043b14c0c1f9f98"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "HU",
+    "IsoCode3": "HUN",
+    "PhoneCode": "36",
+    "Name": "Hungary",
+    "Id": "584973a62043b14c0c1f9f99"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "IS",
+    "IsoCode3": "ISL",
+    "PhoneCode": "354",
+    "Name": "Iceland",
+    "Id": "584973a62043b14c0c1f9f9a"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "IN",
+    "IsoCode3": "IND",
+    "PhoneCode": "91",
+    "Name": "India",
+    "Id": "584973a62043b14c0c1f9f9b"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ID",
+    "IsoCode3": "IDN",
+    "PhoneCode": "62",
+    "Name": "Indonesia",
+    "Id": "584973a62043b14c0c1f9f9c"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "IR",
+    "IsoCode3": "IRN",
+    "PhoneCode": "98",
+    "Name": "Iran",
+    "Id": "584973a62043b14c0c1f9f9d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "IQ",
+    "IsoCode3": "IRQ",
+    "PhoneCode": "964",
+    "Name": "Iraq",
+    "Id": "584973a62043b14c0c1f9f9e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "IE",
+    "IsoCode3": "IRL",
+    "PhoneCode": "353",
+    "Name": "Ireland",
+    "Id": "584973a62043b14c0c1f9f9f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "IM",
+    "IsoCode3": "IMN",
+    "PhoneCode": "44-1624",
+    "Name": "Isle of Man",
+    "Id": "584973a62043b14c0c1f9fa0"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "IL",
+    "IsoCode3": "ISR",
+    "PhoneCode": "972",
+    "Name": "Israel",
+    "Id": "584973a62043b14c0c1f9fa1"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "IT",
+    "IsoCode3": "ITA",
+    "PhoneCode": "39",
+    "Name": "Italy",
+    "Id": "584973a62043b14c0c1f9fa2"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CI",
+    "IsoCode3": "CIV",
+    "PhoneCode": "225",
+    "Name": "Ivory Coast",
+    "Id": "584973a62043b14c0c1f9fa3"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "JM",
+    "IsoCode3": "JAM",
+    "PhoneCode": "1-876",
+    "Name": "Jamaica",
+    "Id": "584973a62043b14c0c1f9fa4"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "JP",
+    "IsoCode3": "JPN",
+    "PhoneCode": "81",
+    "Name": "Japan",
+    "Id": "584973a62043b14c0c1f9fa5"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "JO",
+    "IsoCode3": "JOR",
+    "PhoneCode": "962",
+    "Name": "Jordan",
+    "Id": "584973a62043b14c0c1f9fa7"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KZ",
+    "IsoCode3": "KAZ",
+    "PhoneCode": "7",
+    "Name": "Kazakhstan",
+    "Id": "584973a62043b14c0c1f9fa8"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KE",
+    "IsoCode3": "KEN",
+    "PhoneCode": "254",
+    "Name": "Kenya",
+    "Id": "584973a62043b14c0c1f9fa9"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KI",
+    "IsoCode3": "KIR",
+    "PhoneCode": "686",
+    "Name": "Kiribati",
+    "Id": "584973a62043b14c0c1f9faa"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KW",
+    "IsoCode3": "KWT",
+    "PhoneCode": "965",
+    "Name": "Kuwait",
+    "Id": "584973a62043b14c0c1f9fac"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KG",
+    "IsoCode3": "KGZ",
+    "PhoneCode": "996",
+    "Name": "Kyrgyzstan",
+    "Id": "584973a62043b14c0c1f9fad"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LA",
+    "IsoCode3": "LAO",
+    "PhoneCode": "856",
+    "Name": "Laos",
+    "Id": "584973a62043b14c0c1f9fae"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LV",
+    "IsoCode3": "LVA",
+    "PhoneCode": "371",
+    "Name": "Latvia",
+    "Id": "584973a62043b14c0c1f9faf"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LB",
+    "IsoCode3": "LBN",
+    "PhoneCode": "961",
+    "Name": "Lebanon",
+    "Id": "584973a62043b14c0c1f9fb0"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LS",
+    "IsoCode3": "LSO",
+    "PhoneCode": "266",
+    "Name": "Lesotho",
+    "Id": "584973a62043b14c0c1f9fb1"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LR",
+    "IsoCode3": "LBR",
+    "PhoneCode": "231",
+    "Name": "Liberia",
+    "Id": "584973a62043b14c0c1f9fb2"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LY",
+    "IsoCode3": "LBY",
+    "PhoneCode": "218",
+    "Name": "Libya",
+    "Id": "584973a62043b14c0c1f9fb3"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LI",
+    "IsoCode3": "LIE",
+    "PhoneCode": "423",
+    "Name": "Liechtenstein",
+    "Id": "584973a62043b14c0c1f9fb4"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LT",
+    "IsoCode3": "LTU",
+    "PhoneCode": "370",
+    "Name": "Lithuania",
+    "Id": "584973a62043b14c0c1f9fb5"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LU",
+    "IsoCode3": "LUX",
+    "PhoneCode": "352",
+    "Name": "Luxembourg",
+    "Id": "584973a62043b14c0c1f9fb6"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MO",
+    "IsoCode3": "MAC",
+    "PhoneCode": "853",
+    "Name": "Macao",
+    "Id": "584973a62043b14c0c1f9fb7"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MK",
+    "IsoCode3": "MKD",
+    "PhoneCode": "389",
+    "Name": "Macedonia",
+    "Id": "584973a62043b14c0c1f9fb8"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MG",
+    "IsoCode3": "MDG",
+    "PhoneCode": "261",
+    "Name": "Madagascar",
+    "Id": "584973a62043b14c0c1f9fb9"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MW",
+    "IsoCode3": "MWI",
+    "PhoneCode": "265",
+    "Name": "Malawi",
+    "Id": "584973a62043b14c0c1f9fba"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MY",
+    "IsoCode3": "MYS",
+    "PhoneCode": "60",
+    "Name": "Malaysia",
+    "Id": "584973a62043b14c0c1f9fbb"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MV",
+    "IsoCode3": "MDV",
+    "PhoneCode": "960",
+    "Name": "Maldives",
+    "Id": "584973a62043b14c0c1f9fbc"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ML",
+    "IsoCode3": "MLI",
+    "PhoneCode": "223",
+    "Name": "Mali",
+    "Id": "584973a62043b14c0c1f9fbd"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MT",
+    "IsoCode3": "MLT",
+    "PhoneCode": "356",
+    "Name": "Malta",
+    "Id": "584973a62043b14c0c1f9fbe"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MH",
+    "IsoCode3": "MHL",
+    "PhoneCode": "692",
+    "Name": "Marshall Islands",
+    "Id": "584973a62043b14c0c1f9fbf"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MR",
+    "IsoCode3": "MRT",
+    "PhoneCode": "222",
+    "Name": "Mauritania",
+    "Id": "584973a62043b14c0c1f9fc0"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MU",
+    "IsoCode3": "MUS",
+    "PhoneCode": "230",
+    "Name": "Mauritius",
+    "Id": "584973a62043b14c0c1f9fc1"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MX",
+    "IsoCode3": "MEX",
+    "PhoneCode": "52",
+    "Name": "Mexico",
+    "Id": "584973a62043b14c0c1f9fc3"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "FM",
+    "IsoCode3": "FSM",
+    "PhoneCode": "691",
+    "Name": "Micronesia",
+    "Id": "584973a62043b14c0c1f9fc4"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MD",
+    "IsoCode3": "MDA",
+    "PhoneCode": "373",
+    "Name": "Moldova",
+    "Id": "584973a62043b14c0c1f9fc5"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MC",
+    "IsoCode3": "MCO",
+    "PhoneCode": "377",
+    "Name": "Monaco",
+    "Id": "584973a62043b14c0c1f9fc6"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MN",
+    "IsoCode3": "MNG",
+    "PhoneCode": "976",
+    "Name": "Mongolia",
+    "Id": "584973a62043b14c0c1f9fc7"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ME",
+    "IsoCode3": "MNE",
+    "PhoneCode": "382",
+    "Name": "Montenegro",
+    "Id": "584973a62043b14c0c1f9fc8"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MA",
+    "IsoCode3": "MAR",
+    "PhoneCode": "212",
+    "Name": "Morocco",
+    "Id": "584973a62043b14c0c1f9fca"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MZ",
+    "IsoCode3": "MOZ",
+    "PhoneCode": "258",
+    "Name": "Mozambique",
+    "Id": "584973a62043b14c0c1f9fcb"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MM",
+    "IsoCode3": "MMR",
+    "PhoneCode": "95",
+    "Name": "Myanmar",
+    "Id": "584973a62043b14c0c1f9fcc"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NA",
+    "IsoCode3": "NAM",
+    "PhoneCode": "264",
+    "Name": "Namibia",
+    "Id": "584973a62043b14c0c1f9fcd"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NP",
+    "IsoCode3": "NPL",
+    "PhoneCode": "977",
+    "Name": "Nepal",
+    "Id": "584973a62043b14c0c1f9fcf"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NL",
+    "IsoCode3": "NLD",
+    "PhoneCode": "31",
+    "Name": "Netherlands",
+    "Id": "584973a62043b14c0c1f9fd0"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NC",
+    "IsoCode3": "NCL",
+    "PhoneCode": "687",
+    "Name": "New Caledonia",
+    "Id": "584973a62043b14c0c1f9fd2"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NZ",
+    "IsoCode3": "NZL",
+    "PhoneCode": "64",
+    "Name": "New Zealand",
+    "Id": "584973a62043b14c0c1f9fd3"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NI",
+    "IsoCode3": "NIC",
+    "PhoneCode": "505",
+    "Name": "Nicaragua",
+    "Id": "584973a62043b14c0c1f9fd4"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NE",
+    "IsoCode3": "NER",
+    "PhoneCode": "227",
+    "Name": "Niger",
+    "Id": "584973a62043b14c0c1f9fd5"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NG",
+    "IsoCode3": "NGA",
+    "PhoneCode": "234",
+    "Name": "Nigeria",
+    "Id": "584973a62043b14c0c1f9fd6"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KP",
+    "IsoCode3": "PRK",
+    "PhoneCode": "850",
+    "Name": "North Korea",
+    "Id": "584973a62043b14c0c1f9fd8"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "MP",
+    "IsoCode3": "MNP",
+    "PhoneCode": "1-670",
+    "Name": "Northern Mariana Islands",
+    "Id": "584973a62043b14c0c1f9fd9"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "NO",
+    "IsoCode3": "NOR",
+    "PhoneCode": "47",
+    "Name": "Norway",
+    "Id": "584973a62043b14c0c1f9fda"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "OM",
+    "IsoCode3": "OMN",
+    "PhoneCode": "968",
+    "Name": "Oman",
+    "Id": "584973a62043b14c0c1f9fdb"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PK",
+    "IsoCode3": "PAK",
+    "PhoneCode": "92",
+    "Name": "Pakistan",
+    "Id": "584973a62043b14c0c1f9fdc"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PW",
+    "IsoCode3": "PLW",
+    "PhoneCode": "680",
+    "Name": "Palau",
+    "Id": "584973a62043b14c0c1f9fdd"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PS",
+    "IsoCode3": "PSE",
+    "PhoneCode": "970",
+    "Name": "Palestine",
+    "Id": "584973a62043b14c0c1f9fde"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PA",
+    "IsoCode3": "PAN",
+    "PhoneCode": "507",
+    "Name": "Panama",
+    "Id": "584973a62043b14c0c1f9fdf"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PG",
+    "IsoCode3": "PNG",
+    "PhoneCode": "675",
+    "Name": "Papua New Guinea",
+    "Id": "584973a62043b14c0c1f9fe0"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PY",
+    "IsoCode3": "PRY",
+    "PhoneCode": "595",
+    "Name": "Paraguay",
+    "Id": "584973a62043b14c0c1f9fe1"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PE",
+    "IsoCode3": "PER",
+    "PhoneCode": "51",
+    "Name": "Peru",
+    "Id": "584973a62043b14c0c1f9fe2"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PH",
+    "IsoCode3": "PHL",
+    "PhoneCode": "63",
+    "Name": "Philippines",
+    "Id": "584973a62043b14c0c1f9fe3"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PL",
+    "IsoCode3": "POL",
+    "PhoneCode": "48",
+    "Name": "Poland",
+    "Id": "584973a62043b14c0c1f9fe5"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PT",
+    "IsoCode3": "PRT",
+    "PhoneCode": "351",
+    "Name": "Portugal",
+    "Id": "584973a62043b14c0c1f9fe6"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "PR",
+    "IsoCode3": "PRI",
+    "PhoneCode": "1-787, 1-939",
+    "Name": "Puerto Rico",
+    "Id": "584973a62043b14c0c1f9fe7"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "QA",
+    "IsoCode3": "QAT",
+    "PhoneCode": "974",
+    "Name": "Qatar",
+    "Id": "584973a62043b14c0c1f9fe8"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CG",
+    "IsoCode3": "COG",
+    "PhoneCode": "242",
+    "Name": "Republic of the Congo",
+    "Id": "584973a62043b14c0c1f9fe9"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "RO",
+    "IsoCode3": "ROU",
+    "PhoneCode": "40",
+    "Name": "Romania",
+    "Id": "584973a62043b14c0c1f9feb"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "RU",
+    "IsoCode3": "RUS",
+    "PhoneCode": "7",
+    "Name": "Russia",
+    "Id": "584973a62043b14c0c1f9fec"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "RW",
+    "IsoCode3": "RWA",
+    "PhoneCode": "250",
+    "Name": "Rwanda",
+    "Id": "584973a62043b14c0c1f9fed"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KN",
+    "IsoCode3": "KNA",
+    "PhoneCode": "1-869",
+    "Name": "Saint Kitts and Nevis",
+    "Id": "584973a62043b14c0c1f9ff0"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LC",
+    "IsoCode3": "LCA",
+    "PhoneCode": "1-758",
+    "Name": "Saint Lucia",
+    "Id": "584973a62043b14c0c1f9ff1"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "VC",
+    "IsoCode3": "VCT",
+    "PhoneCode": "1-784",
+    "Name": "Saint Vincent and the Grenadines",
+    "Id": "584973a62043b14c0c1f9ff4"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "WS",
+    "IsoCode3": "WSM",
+    "PhoneCode": "685",
+    "Name": "Samoa",
+    "Id": "584973a62043b14c0c1f9ff5"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SM",
+    "IsoCode3": "SMR",
+    "PhoneCode": "378",
+    "Name": "San Marino",
+    "Id": "584973a62043b14c0c1f9ff6"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ST",
+    "IsoCode3": "STP",
+    "PhoneCode": "239",
+    "Name": "Sao Tome and Principe",
+    "Id": "584973a62043b14c0c1f9ff7"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SA",
+    "IsoCode3": "SAU",
+    "PhoneCode": "966",
+    "Name": "Saudi Arabia",
+    "Id": "584973a62043b14c0c1f9ff8"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SN",
+    "IsoCode3": "SEN",
+    "PhoneCode": "221",
+    "Name": "Senegal",
+    "Id": "584973a62043b14c0c1f9ff9"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "RS",
+    "IsoCode3": "SRB",
+    "PhoneCode": "381",
+    "Name": "Serbia",
+    "Id": "584973a62043b14c0c1f9ffa"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SC",
+    "IsoCode3": "SYC",
+    "PhoneCode": "248",
+    "Name": "Seychelles",
+    "Id": "584973a62043b14c0c1f9ffb"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SL",
+    "IsoCode3": "SLE",
+    "PhoneCode": "232",
+    "Name": "Sierra Leone",
+    "Id": "584973a62043b14c0c1f9ffc"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SG",
+    "IsoCode3": "SGP",
+    "PhoneCode": "65",
+    "Name": "Singapore",
+    "Id": "584973a62043b14c0c1f9ffd"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SK",
+    "IsoCode3": "SVK",
+    "PhoneCode": "421",
+    "Name": "Slovakia",
+    "Id": "584973a62043b14c0c1f9fff"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SI",
+    "IsoCode3": "SVN",
+    "PhoneCode": "386",
+    "Name": "Slovenia",
+    "Id": "584973a62043b14c0c1fa000"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SB",
+    "IsoCode3": "SLB",
+    "PhoneCode": "677",
+    "Name": "Solomon Islands",
+    "Id": "584973a62043b14c0c1fa001"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SO",
+    "IsoCode3": "SOM",
+    "PhoneCode": "252",
+    "Name": "Somalia",
+    "Id": "584973a62043b14c0c1fa002"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ZA",
+    "IsoCode3": "ZAF",
+    "PhoneCode": "27",
+    "Name": "South Africa",
+    "Id": "584973a62043b14c0c1fa003"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "KR",
+    "IsoCode3": "KOR",
+    "PhoneCode": "82",
+    "Name": "South Korea",
+    "Id": "584973a62043b14c0c1fa004"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SS",
+    "IsoCode3": "SSD",
+    "PhoneCode": "211",
+    "Name": "South Sudan",
+    "Id": "584973a62043b14c0c1fa005"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ES",
+    "IsoCode3": "ESP",
+    "PhoneCode": "34",
+    "Name": "Spain",
+    "Id": "584973a62043b14c0c1fa006"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "LK",
+    "IsoCode3": "LKA",
+    "PhoneCode": "94",
+    "Name": "Sri Lanka",
+    "Id": "584973a62043b14c0c1fa007"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SD",
+    "IsoCode3": "SDN",
+    "PhoneCode": "249",
+    "Name": "Sudan",
+    "Id": "584973a62043b14c0c1fa008"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SR",
+    "IsoCode3": "SUR",
+    "PhoneCode": "597",
+    "Name": "Suriname",
+    "Id": "584973a62043b14c0c1fa009"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SJ",
+    "IsoCode3": "SJM",
+    "PhoneCode": "47",
+    "Name": "Svalbard and Jan Mayen",
+    "Id": "584973a62043b14c0c1fa00a"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SZ",
+    "IsoCode3": "SWZ",
+    "PhoneCode": "268",
+    "Name": "Swaziland",
+    "Id": "584973a62043b14c0c1fa00b"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SE",
+    "IsoCode3": "SWE",
+    "PhoneCode": "46",
+    "Name": "Sweden",
+    "Id": "584973a62043b14c0c1fa00c"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "CH",
+    "IsoCode3": "CHE",
+    "PhoneCode": "41",
+    "Name": "Switzerland",
+    "Id": "584973a62043b14c0c1fa00d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "SY",
+    "IsoCode3": "SYR",
+    "PhoneCode": "963",
+    "Name": "Syria",
+    "Id": "584973a62043b14c0c1fa00e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TW",
+    "IsoCode3": "TWN",
+    "PhoneCode": "886",
+    "Name": "Taiwan",
+    "Id": "584973a62043b14c0c1fa00f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TJ",
+    "IsoCode3": "TJK",
+    "PhoneCode": "992",
+    "Name": "Tajikistan",
+    "Id": "584973a62043b14c0c1fa010"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TZ",
+    "IsoCode3": "TZA",
+    "PhoneCode": "255",
+    "Name": "Tanzania",
+    "Id": "584973a62043b14c0c1fa011"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TH",
+    "IsoCode3": "THA",
+    "PhoneCode": "66",
+    "Name": "Thailand",
+    "Id": "584973a62043b14c0c1fa012"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TG",
+    "IsoCode3": "TGO",
+    "PhoneCode": "228",
+    "Name": "Togo",
+    "Id": "584973a62043b14c0c1fa013"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TO",
+    "IsoCode3": "TON",
+    "PhoneCode": "676",
+    "Name": "Tonga",
+    "Id": "584973a62043b14c0c1fa015"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TT",
+    "IsoCode3": "TTO",
+    "PhoneCode": "1-868",
+    "Name": "Trinidad and Tobago",
+    "Id": "584973a62043b14c0c1fa016"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TN",
+    "IsoCode3": "TUN",
+    "PhoneCode": "216",
+    "Name": "Tunisia",
+    "Id": "584973a62043b14c0c1fa017"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TR",
+    "IsoCode3": "TUR",
+    "PhoneCode": "90",
+    "Name": "Turkey",
+    "Id": "584973a62043b14c0c1fa018"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TM",
+    "IsoCode3": "TKM",
+    "PhoneCode": "993",
+    "Name": "Turkmenistan",
+    "Id": "584973a62043b14c0c1fa019"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TC",
+    "IsoCode3": "TCA",
+    "PhoneCode": "1-649",
+    "Name": "Turks and Caicos Islands",
+    "Id": "584973a62043b14c0c1fa01a"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "TV",
+    "IsoCode3": "TUV",
+    "PhoneCode": "688",
+    "Name": "Tuvalu",
+    "Id": "584973a62043b14c0c1fa01b"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "VI",
+    "IsoCode3": "VIR",
+    "PhoneCode": "1-340",
+    "Name": "U.S. Virgin Islands",
+    "Id": "584973a62043b14c0c1fa01c"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "UG",
+    "IsoCode3": "UGA",
+    "PhoneCode": "256",
+    "Name": "Uganda",
+    "Id": "584973a62043b14c0c1fa01d"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "UA",
+    "IsoCode3": "UKR",
+    "PhoneCode": "380",
+    "Name": "Ukraine",
+    "Id": "584973a62043b14c0c1fa01e"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "AE",
+    "IsoCode3": "ARE",
+    "PhoneCode": "971",
+    "Name": "United Arab Emirates",
+    "Id": "584973a62043b14c0c1fa01f"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "GB",
+    "IsoCode3": "GBR",
+    "PhoneCode": "44",
+    "Name": "United Kingdom",
+    "Id": "584973a62043b14c0c1fa020"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "US",
+    "IsoCode3": "USA",
+    "PhoneCode": "1",
+    "Name": "United States",
+    "Id": "584973a62043b14c0c1fa021"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "UY",
+    "IsoCode3": "URY",
+    "PhoneCode": "598",
+    "Name": "Uruguay",
+    "Id": "584973a62043b14c0c1fa022"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "UZ",
+    "IsoCode3": "UZB",
+    "PhoneCode": "998",
+    "Name": "Uzbekistan",
+    "Id": "584973a62043b14c0c1fa023"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "VU",
+    "IsoCode3": "VUT",
+    "PhoneCode": "678",
+    "Name": "Vanuatu",
+    "Id": "584973a62043b14c0c1fa024"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "VA",
+    "IsoCode3": "VAT",
+    "PhoneCode": "379",
+    "Name": "Vatican",
+    "Id": "584973a62043b14c0c1fa025"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "VE",
+    "IsoCode3": "VEN",
+    "PhoneCode": "58",
+    "Name": "Venezuela",
+    "Id": "584973a62043b14c0c1fa026"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "VN",
+    "IsoCode3": "VNM",
+    "PhoneCode": "84",
+    "Name": "Vietnam",
+    "Id": "584973a62043b14c0c1fa027"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "YE",
+    "IsoCode3": "YEM",
+    "PhoneCode": "967",
+    "Name": "Yemen",
+    "Id": "584973a62043b14c0c1fa02a"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ZM",
+    "IsoCode3": "ZMB",
+    "PhoneCode": "260",
+    "Name": "Zambia",
+    "Id": "584973a62043b14c0c1fa02b"
+  },
+  {
+    "MinZip": 100000,
+    "MaxZip": 999999,
+    "IsoCode": "ZW",
+    "IsoCode3": "ZWE",
+    "PhoneCode": "263",
+    "Name": "Zimbabwe",
+    "Id": "584973a62043b14c0c1fa02c"
+  }
+]

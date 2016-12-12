@@ -1,0 +1,8 @@
+﻿<div>
+    <label for="stringMaxLength">Max length</label>
+    <input id="stringMaxLength" type="number" class="max-length-input" ng-model="columnInfo.maxLength" min="1" max="8192"/>
+    <select class=""
+            ng-model="columnInfo.fullNameFormat"
+            ng-options="info.value as info.displayValue for info in vm.fullNameFormatInfos">
+    </select>
+</div>

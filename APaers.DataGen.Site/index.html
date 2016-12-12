@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Data Generator</title>
+    <link href="content/themes/Yeti/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/site.css" rel="stylesheet" />
+    <link href="content/angular-block-ui.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="indexController as vm">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="btn btn-success navbar-toggle" ng-init="vm.isCollapsed = true" ng-click="vm.isCollapsed = !vm.isCollapsed">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+                <a class="navbar-brand" href="/">Data Generator</a>
+            </div>
+            <div class="navbar-collapse" ng-class="{collapse: vm.isCollapsed}">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li class="btn-group" uib-dropdown>
+                        <a href id="themeDropdown" uib-dropdown-toggle>Theme (@themeName) <span class="caret"></span></a>
+                        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="themeDropdown">
+                            @foreach (string theme in ThemeHelper.Themes)
+                            {
+                            string checkmark = theme == themeName ? "✔" : "";
+                            <li role="menuitem"><a href="@Url.Action(" ChangeTheme", "Profile" , new {themeName=theme})">@checkmark @theme</a></li>
+                            }
+                        </ul>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 50px">
+        <div ng-view=""></div>
+    </div>
+    <hr />
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted">&copy; <span ng-model="vm.copyrightYear"></span> - Data Generator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-local-storage.js"></script>
+    <script src="scripts/angular-block-ui.min.js"></script>
+    <script src="scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="scripts/moment.min.js"></script>
+    <!-- App bootstrap scripts -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.consts.js"></script>
+    <script src="app/app.route.js"></script>
+    <!-- Services -->
+    <script src="app/services/authInterceptor.service.js"></script>
+    <script src="app/services/ajax.service.js"></script>
+    <script src="app/services/auth.service.js"></script>
+    <script src="app/services/lib.service.js"></script>
+    <script src="app/services/dataGen.service.js"></script>
+    <!-- Directives -->
+    <script src="app/directives/msgConfirmClick.directive.js"></script>
+    <!-- Controllers -->
+    <script src="app/controllers/index.controller.js"></script>
+    <script src="app/controllers/home.controller.js"></script>
+    <script src="app/controllers/login.controller.js"></script>
+</body>
+</html>

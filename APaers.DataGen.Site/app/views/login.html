@@ -1,0 +1,48 @@
+﻿<div id="loginView" class="row" ng-controller="loginController as vm">
+    <div ng-hide="vm.message == ''" class="alert alert-danger">{{vm.message}}</div>
+    <div class="col-md-1" >&nbsp;</div>
+    <div class="col-md-4" >
+        <form name="loginForm" novalidate>
+            <h3>Login</h3>
+            <div class="form-group" ng-class="{ 'has-error': loginForm.userName.$invalid && loginForm.userName.$dirty }">
+                <label for="userName">User Name</label>
+                <input id="userName" name="userName" class="form-control" placeholder="User Name" required autofocus ng-model="vm.loginData.userName" />
+                <p ng-show="loginForm.userName.$invalid && loginForm.userName.$dirty" class="help-block">User Name is required.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error': loginForm.password.$invalid && loginForm.password.$dirty }">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" class="form-control" placeholder="Password" required ng-model="vm.loginData.password" />
+                <p ng-show="loginForm.password.$invalid && loginForm.password.$dirty" class="help-block">Password is required.</p>
+            </div>
+            <button id="loginButton" type="submit" class="btn btn-primary" ng-click="vm.login()" ng-disabled="loginForm.$invalid">Login</button>
+        </form>
+    </div>
+    <div class="col-md-2">&nbsp;</div>
+    <div class="col-md-4">
+        <form name="registerForm" novalidate>
+            <h3>Register</h3>
+            <div class="form-group" ng-class="{ 'has-error': registerForm.userName.$invalid && registerForm.userName.$dirty }">
+                <label for="userNameReg">User Name</label>
+                <input id="userNameReg" name="userName" class="form-control" placeholder="User Name" required autofocus ng-model="vm.registration.userName" />
+                <p ng-show="registerForm.userName.$invalid && registerForm.userName.$dirty" class="help-block">User Name is required.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error': registerForm.email.$invalid && registerForm.email.$dirty }">
+                <label for="emailReg">Email</label>
+                <input id="emailReg" type="email" name="email" class="form-control" placeholder="Email" required ng-model="vm.registration.email" />
+                <p ng-show="registerForm.email.$invalid && registerForm.email.$dirty" class="help-block">Valid email is required.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error': registerForm.password.$invalid && registerForm.password.$dirty }">
+                <label for="passwordReg">Password</label>
+                <input id="passwordReg" type="password" name="password" class="form-control" placeholder="Password" required ng-minlength="2" ng-model="vm.registration.password" />
+                <p ng-show="registerForm.password.$invalid && registerForm.password.$dirty" class="help-block">Password is required and should have at least 2 symbols.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error': registerForm.confirmPassword.$invalid && registerForm.confirmPassword.$dirty }">
+                <label for="confirmPasswordReg">Confirm Password</label>
+                <input id="confirmPasswordReg" type="password" name="confirmPassword" class="form-control" placeholder="Confirm Password" required ng-minlength="2" ng-model="vm.registration.confirmPassword" />
+                <p ng-show="registerForm.confirmPassword.$invalid && registerForm.confirmPassword.$dirty" class="help-block">Confirm Password is required and should have at least 2 symbols.</p>
+            </div>
+            <button id="registerButton" type="submit" class="btn btn-primary" ng-click="vm.register()" ng-disabled="registerForm.$invalid">Register</button>
+        </form>
+    </div>
+    <div class="col-md-1">&nbsp;</div>
+</div>

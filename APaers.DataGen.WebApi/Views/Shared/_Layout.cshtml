@@ -1,0 +1,90 @@
+﻿@using APaers.DataGen.Abstract
+@using APaers.DataGen.Abstract.Generate
+@using APaers.DataGen.WebApi.Helpers
+@{
+    string themeName = ThemeHelper.CurrentTheme;
+    string themeBundle = ThemeHelper.Bundle(themeName);
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render(themeBundle)
+    @Scripts.Render("~/bundles/angular")
+
+    @Scripts.Render("~/bundles/shared")
+    @Scripts.Render("~/bundles/home")
+
+    <base href="/" />
+</head>
+<body ng-app="app" ng-controller="masterController as vm" ng-init="vm.initializeController()">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Data Generator", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="btn-group" uib-dropdown>
+                    <a href id="themeDropdown" uib-dropdown-toggle>Theme (@themeName) <span class="caret"></span></a>
+                    <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="themeDropdown">
+                        @foreach (string theme in ThemeHelper.Themes)
+                        {
+                            string checkmark = theme == themeName ? "✔" : "";
+                            <li role="menuitem"><a href="@Url.Action("ChangeTheme", "Profile", new {themeName = theme})">@checkmark @theme</a></li>
+                        }
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Data Generator</p>
+    </footer>
+</div>
+
+<script>
+    @(Html.EnumAsJavascriptObject<SqlType>());
+    @(Html.EnumAsJavascriptObject<ColumnType>());
+    @(Html.EnumAsJavascriptObject<FullNameFormat>());
+    
+    (function () {
+        "use strict";
+        var app = angular.module("app");
+        app.provider("appConfig",
+            function() {
+                var columnTypeInfos;
+                return {
+                    /*setColumnTypes: function(value) {
+                        columnTypeInfos = value;
+                    },
+                    getColumnTypes: function () {
+                        return columnTypeInfos;
+                    },*/
+                    $get: function() {
+                        return {
+                            //columnTypes: columnTypeInfos
+                        }
+                    }
+                }
+            });
+
+        app.config(function(appConfigProvider) {
+        });
+    })();
+</script>
+@RenderSection("scripts", false)
+</body>
+</html>

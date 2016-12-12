@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27F83FDD-8881-48B3-A996-EFF8092D99E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APaers.DataGen.Abstract</RootNamespace>
+    <AssemblyName>APaers.DataGen.Abstract</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\DataGenExceptionBase.cs" />
+    <Compile Include="Generate\BooleanColumnInfo.cs" />
+    <Compile Include="Generate\CityColumnInfo.cs" />
+    <Compile Include="Generate\ColumnInfoHelper.cs" />
+    <Compile Include="Generate\ColumnType.cs" />
+    <Compile Include="Generate\CountryColumnInfo.cs" />
+    <Compile Include="Generate\DateTimeColumnInfo.cs" />
+    <Compile Include="Generate\EmailColumnInfo.cs" />
+    <Compile Include="Generate\FirstNameColumnInfo.cs" />
+    <Compile Include="Generate\FullAddressColumnInfo.cs" />
+    <Compile Include="Generate\FullNameColumnInfo.cs" />
+    <Compile Include="Generate\GuidColumnInfo.cs" />
+    <Compile Include="Generate\IntColumnInfo.cs" />
+    <Compile Include="Generate\LastNameColumnInfo.cs" />
+    <Compile Include="Generate\LatitudeLongitudeColumnInfo.cs" />
+    <Compile Include="Generate\MoneyColumnInfo.cs" />
+    <Compile Include="Generate\NumberColumnInfo.cs" />
+    <Compile Include="Generate\ColumnInfo.cs" />
+    <Compile Include="Data\IConnectionStringProvider.cs" />
+    <Compile Include="Generate\IColumnValueStrategy.cs" />
+    <Compile Include="Generate\AutoincColumnInfo.cs" />
+    <Compile Include="Generate\PhoneColumnInfo.cs" />
+    <Compile Include="Generate\PostalCodeColumnInfo.cs" />
+    <Compile Include="Generate\RandomTextColumnInfo.cs" />
+    <Compile Include="Generate\RegionColumnInfo.cs" />
+    <Compile Include="Generate\AddressLine2ColumnInfo.cs" />
+    <Compile Include="Generate\AddressLine1ColumnInfo.cs" />
+    <Compile Include="Generate\TableInfo.cs" />
+    <Compile Include="Data\IAddressPartDataProvider.cs" />
+    <Compile Include="Generate\PassportNumberColumnInfo.cs" />
+    <Compile Include="Keys.cs" />
+    <Compile Include="Repo\IAddressPartRepo.cs" />
+    <Compile Include="Generate\IDataGenStrategy.cs" />
+    <Compile Include="Data\IDataProvider.cs" />
+    <Compile Include="Repo\ILog.cs" />
+    <Compile Include="Repo\IRepo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repo\IRepoFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APaers.Common\APaers.Common.csproj">
+      <Project>{F6037C93-D4C8-4868-AEB8-8B0D4A697E58}</Project>
+      <Name>APaers.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\APaers.DataGen.Entities\APaers.DataGen.Entities.csproj">
+      <Project>{02277A77-6A3C-4878-AC51-5D8A16E26147}</Project>
+      <Name>APaers.DataGen.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
