@@ -1,6 +1,5 @@
 * // Remove the XML formatter
     config.Formatters.Remove(config.Formatters.XmlFormatter);
-* Asynchronous controllers
 * Country, Region, City - from one Country for each generated row
 * Column types
   * Country ISO2
