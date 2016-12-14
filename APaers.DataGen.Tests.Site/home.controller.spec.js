@@ -53,7 +53,7 @@ describe("homeController",
 
         it("homeController initialization",
             function () {
-                expect(vm.tableInfo.length).toEqual(tableInfo.length);
+                expect(vm.tableInfo.length).toBe(tableInfo.length);
                 expect(vm.generatedText).toEqual(generatedDataVm.generatedData);
             });
 
@@ -65,7 +65,7 @@ describe("homeController",
                 vm.getTableInfo();
                 // Assert
                 expect(dataGenServiceMock.getTableInfo).toHaveBeenCalled();
-                expect(dataGenServiceMock.getTableInfo.calls.count()).toEqual(2);
+                expect(dataGenServiceMock.getTableInfo.calls.count()).toBe(2);
                 expect(vm.tableInfo).toEqual({});
             });
 
@@ -77,7 +77,7 @@ describe("homeController",
                 vm.getTableInfo();
                 // Assert
                 expect(dataGenServiceMock.getTableInfo).toHaveBeenCalled();
-                expect(dataGenServiceMock.getTableInfo.calls.count()).toEqual(2);
+                expect(dataGenServiceMock.getTableInfo.calls.count()).toBe(2);
                 expect(vm.tableInfo).toEqual(tableInfo);
             });
 
@@ -102,7 +102,7 @@ describe("homeController",
                 vm.getGeneratedData();
                 // Assert
                 expect(dataGenServiceMock.getGeneratedData).toHaveBeenCalled();
-                expect(dataGenServiceMock.getGeneratedData.calls.count()).toEqual(2);
+                expect(dataGenServiceMock.getGeneratedData.calls.count()).toBe(2);
                 expect(vm.generatedText).toEqual("");
             });
 
@@ -125,7 +125,7 @@ describe("homeController",
                 vm.getGeneratedData();
                 // Assert
                 expect(dataGenServiceMock.getGeneratedData).toHaveBeenCalledWith(tableInfoVm, jasmine.any(Function), jasmine.any(Function));
-                expect(dataGenServiceMock.getGeneratedData.calls.count()).toEqual(2);
+                expect(dataGenServiceMock.getGeneratedData.calls.count()).toBe(2);
                 expect(vm.generatedText).toEqual(generatedDataVm.generatedData);
             });
 

@@ -1,8 +1,15 @@
-* // Remove the XML formatter
-    config.Formatters.Remove(config.Formatters.XmlFormatter);
+
+* In chrome dev tools, if you access the tab “profiles” and then “take heap snapshot”, you will see in the output
+
 * Country, Region, City - from one Country for each generated row
+
 * Column types
   * Country ISO2
   * Country ISO3
+
 * Flexible formats: {Country}, {City}, {CountryIso2} etc.
+
+* So, how can we limit the number of watchers? By not watching scope models when we don’t expect them to change. It is fairly easy onwards from AngularJS 1.3, since one-time bindings are in core now.
+<li ng-repeat=“item in ::vastArray”>{{ ::item.velocity }}</li>
+
 * 
