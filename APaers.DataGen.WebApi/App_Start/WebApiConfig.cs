@@ -11,6 +11,7 @@ namespace APaers.DataGen.WebApi
     {
         public static void Register(HttpConfiguration config)
         {
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
             // Web API configuration and services
