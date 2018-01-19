@@ -19,8 +19,7 @@ namespace APaers.DataGen.Api.Infrastructure
         public override void OnException(HttpActionExecutedContext context)
         {
             string message = context.Exception.Message;
-            var dataGenException = context.Exception as DataGenExceptionBase;
-            if (dataGenException != null)
+            if (context.Exception is DataGenExceptionBase dataGenException)
             {
                 string reasonPhrase = dataGenException.ReasonPhrase;
                 Log.Error($"Reason: '{reasonPhrase}'; Message: '{message}'");

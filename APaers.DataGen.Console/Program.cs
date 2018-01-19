@@ -69,6 +69,7 @@ namespace APaers.DataGen.ConsoleTest
                 }
                 Console.WriteLine("--------------------------------------");
 
+                AppDomain.CurrentDomain.SetData("DataDirectory", @"..\..\..\APaers.DataGen.Api\App_Data");
                 InsertScriptGenerationOptions generationOptions = new InsertScriptGenerationOptions {RowCount = 3};
                 GenerateScript(strategy, tableInfo, generationOptions);
                 GenerateScript(strategy, tableInfo, generationOptions);
