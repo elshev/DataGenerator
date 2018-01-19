@@ -57,11 +57,11 @@
     <Content Include="Content\jasmine\jasmine.css" />
     <Content Include="Content\jasmine\jasmine_favicon.png" />
     <Content Include="dataGen.service.spec.js" />
+    <Content Include="home.controller.spec.js" />
     <Content Include="Scripts\jasmine\boot.js" />
     <Content Include="Scripts\jasmine\console.js" />
     <Content Include="Scripts\jasmine\jasmine-html.js" />
     <Content Include="Scripts\jasmine\jasmine.js" />
-    <Content Include="home.controller.spec.js" />
     <Content Include="_references.tests.js" />
   </ItemGroup>
   <ItemGroup>

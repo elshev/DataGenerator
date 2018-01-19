@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using APaers.DataGen.Abstract.Generate;
 using APaers.DataGen.Entities;
 using APaers.DataGen.Generate;
@@ -32,10 +33,10 @@ namespace APaers.DataGen.Tests.Values
             Assert.AreEqual(2, ar.Length);
             Assert.IsTrue(2 <= ar[1].Length && ar[1].Length <= 8);
 
-            double latitude = double.Parse(sLatitude);
+            double latitude = double.Parse(sLatitude, CultureInfo.InvariantCulture);
             Assert.IsTrue(-90 <= latitude && latitude <= 90);
 
-            double longitude = double.Parse(sLongitude);
+            double longitude = double.Parse(sLongitude, CultureInfo.InvariantCulture);
             Assert.IsTrue(-180 <= longitude && longitude <= 180);
         }
 

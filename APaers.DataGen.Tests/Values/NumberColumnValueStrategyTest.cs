@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Globalization;
+using System.Text.RegularExpressions;
 using APaers.DataGen.Abstract.Generate;
 using APaers.DataGen.Generate;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -22,9 +23,9 @@ namespace APaers.DataGen.Tests.Values
             };
             var strategy = new NumberColumnValueStrategy(RepoFactory);
             // Act
-            string value = strategy.GetValue(columnInfo);
+            string value = strategy.GetValue(columnInfo, CultureInfo.InvariantCulture);
             // Assert
-            double doubleValue = double.Parse(value);
+            double doubleValue = double.Parse(value, CultureInfo.InvariantCulture);
             Assert.IsTrue(min <= doubleValue && doubleValue <= max);
         }
 
@@ -43,7 +44,7 @@ namespace APaers.DataGen.Tests.Values
             // Act
             string value = strategy.GetValue(columnInfo);
             // Assert
-            double intValue = double.Parse(value);
+            double intValue = double.Parse(value, CultureInfo.InvariantCulture);
             Assert.AreEqual(minMax, intValue);
         }
 

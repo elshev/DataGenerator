@@ -137,8 +137,8 @@ namespace APaers.DataGen.Tests.Ui
                     break;
             }
             driver = new NgWebDriver(webDriver);
-            driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(5));
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
+            driver.Manage().Timeouts().AsynchronousJavaScript = TimeSpan.FromSeconds(5);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
 
         [TestCleanup]

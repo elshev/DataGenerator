@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Text.RegularExpressions;
 using APaers.DataGen.Abstract.Generate;
 using APaers.DataGen.Generate;
@@ -22,9 +23,9 @@ namespace APaers.DataGen.Tests.Values
             };
             var strategy = new MoneyColumnValueStrategy(RepoFactory);
             // Act
-            string value = strategy.GetValue(columnInfo);
+            string value = strategy.GetValue(columnInfo, CultureInfo.InvariantCulture);
             // Assert
-            decimal decimalValue = decimal.Parse(value);
+            decimal decimalValue = decimal.Parse(value, CultureInfo.InvariantCulture);
             Assert.IsTrue(min <= decimalValue && decimalValue <= max);
         }
 
@@ -43,7 +44,7 @@ namespace APaers.DataGen.Tests.Values
             // Act
             string value = strategy.GetValue(columnInfo);
             // Assert
-            decimal intValue = decimal.Parse(value);
+            decimal intValue = decimal.Parse(value, CultureInfo.InvariantCulture);
             Assert.AreEqual(minMax, intValue);
         }
 

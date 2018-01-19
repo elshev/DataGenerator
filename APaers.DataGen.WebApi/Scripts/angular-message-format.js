@@ -1,6 +1,6 @@
 /**
- * @license AngularJS v1.5.9
- * (c) 2010-2016 Google, Inc. http://angularjs.org
+ * @license AngularJS v1.6.6
+ * (c) 2010-2017 Google, Inc. http://angularjs.org
  * License: MIT
  */
 (function(window, angular) {'use strict';
@@ -13,15 +13,7 @@
 /* global isFunction: false */
 /* global noop: false */
 /* global toJson: false */
-
-function stringify(value) {
-  if (value == null /* null/undefined */) { return ''; }
-  switch (typeof value) {
-    case 'string':     return value;
-    case 'number':     return '' + value;
-    default:           return toJson(value);
-  }
-}
+/* global $$stringify: false */
 
 // Convert an index into the string into line/column for use in error messages
 // As such, this doesn't have to be efficient.
@@ -862,7 +854,6 @@ MessageFormatParser.prototype.ruleInAngularExpression = function ruleInAngularEx
 /* global noop: true */
 /* global toJson: true */
 /* global MessageFormatParser: false */
-/* global stringify: false */
 
 /**
  * @ngdoc module
@@ -1032,7 +1023,7 @@ var $$MessageFormatFactory = ['$parse', '$locale', '$sce', '$exceptionHandler', 
     return function stringifier(value) {
       try {
         value = trustedContext ? $sce['getTrusted'](trustedContext, value) : $sce['valueOf'](value);
-        return allOrNothing && (value === undefined) ? value : stringify(value);
+        return allOrNothing && (value === undefined) ? value : $$stringify(value);
       } catch (err) {
         $exceptionHandler($interpolateMinErr['interr'](text, err));
       }
@@ -1066,14 +1057,17 @@ var $interpolateMinErr;
 var isFunction;
 var noop;
 var toJson;
+var $$stringify;
 
 var module = window['angular']['module']('ngMessageFormat', ['ng']);
+module['info']({ 'angularVersion': '1.6.6' });
 module['factory']('$$messageFormat', $$MessageFormatFactory);
 module['config'](['$provide', function($provide) {
   $interpolateMinErr = window['angular']['$interpolateMinErr'];
   isFunction = window['angular']['isFunction'];
   noop = window['angular']['noop'];
   toJson = window['angular']['toJson'];
+  $$stringify = window['angular']['$$stringify'];
 
   $provide['decorator']('$interpolate', $$interpolateDecorator);
 }]);

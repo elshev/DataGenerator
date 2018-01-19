@@ -7,7 +7,7 @@ namespace APaers.DataGen.Generate
         where TColumnInfo : ColumnInfo
         where TContext: class
     {
-        protected IRepoFactory RepoFactory { get; private set; }
+        protected IRepoFactory RepoFactory { get; }
 
         protected ColumnValueStrategyBase(IRepoFactory repoFactory)
         {
