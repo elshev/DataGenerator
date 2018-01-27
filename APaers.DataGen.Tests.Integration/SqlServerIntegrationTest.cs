@@ -25,6 +25,24 @@ namespace APaers.DataGen.Tests.Integration
             ClassCleanupBase();
         }
 
+        private string tableToDrop;
+        
+        [TestCleanup]
+        public override void TestCleanup()
+        {
+            DropTable(tableToDrop);
+            base.TestCleanup();
+        }
+
+        private void DropTable(string tableName)
+        {
+            if (string.IsNullOrWhiteSpace(tableName))
+                return;
+            string[] parts = tableName.Split('.');
+            ExecuteNonQuery($"if exists (select 1 from sysobjects where type = 'U' and name = '{parts[parts.Length - 1]}') " +
+                            $"drop table {tableName};");
+        }
+
         [TestMethod]
         public async Task TestGenerateFromScript_NullArgument()
         {
@@ -40,12 +58,12 @@ namespace APaers.DataGen.Tests.Integration
         public async Task TestGenerateFromScript()
         {
             // Arrange
-            const string tableName = "Test01";
+            const string tableName = "TestDB.dbo.Test01";
             IDataGenStrategy strategy = CreateSqlServerDataGenStrategy();
             // Act
             TableInfo tableInfo = await strategy.GetTableInfoAsync(
-                $"create table dbo.{tableName} (" +
-                "Id int IDENTITY(1,1) NOT NULL, " +
+                $"create table {tableName} (" +
+                "Id int IDENTITY(55,2) NOT NULL, " +
                 "[Name] [varchar](128) NOT NULL, " +
                 "NVarCharName nvarchar(256) null" +
                 ") ON [PRIMARY]");
@@ -58,7 +76,10 @@ namespace APaers.DataGen.Tests.Integration
             ColumnInfo columnInfo = columnList[0];
             Assert.AreEqual("Id", columnInfo.Name);
             Assert.IsTrue(columnInfo is AutoincColumnInfo);
-            Assert.AreEqual(4, columnInfo.MaxLength);
+            Assert.AreEqual(true, columnInfo.IsIdentity);
+            Assert.AreEqual(55, columnInfo.IdentitySeed);
+            Assert.AreEqual(2, columnInfo.IdentityIncrement);
+            Assert.AreEqual(0, columnInfo.MaxLength);
             Assert.AreEqual(0, columnInfo.Precision);
             Assert.AreEqual(0, columnInfo.Scale);
             Assert.IsTrue(columnInfo.IsIdentity);
@@ -66,7 +87,7 @@ namespace APaers.DataGen.Tests.Integration
             Assert.IsFalse(columnInfo.IsNullable);
             columnIndex++;
             columnInfo = columnList[columnIndex];
-            Assert.AreEqual("Name", columnInfo.Name);
+            Assert.AreEqual("[Name]", columnInfo.Name);
             Assert.IsTrue(columnInfo is RandomTextColumnInfo);
             Assert.AreEqual(128, columnInfo.MaxLength);
             Assert.AreEqual(0, columnInfo.Precision);
@@ -90,9 +111,10 @@ namespace APaers.DataGen.Tests.Integration
         public async Task TestGenerateInsertScript()
         {
             // Arrange
-            const string tableName = "Test01";
+            const string tableName = "dbo.Test01";
+            tableToDrop = tableName;
             string createTableScript =
-                $"create table dbo.{tableName} (" +
+                $"create table {tableName} (" +
                 "Id int identity(1,1) NOT NULL, " +
                 "[Name] [varchar](128) NOT NULL," +
                 "IntColumn int null" +
@@ -109,7 +131,7 @@ namespace APaers.DataGen.Tests.Integration
             string createInsertScript = createTableScript + Environment.NewLine + insertScript;
             ExecuteNonQuery(createInsertScript);
 
-            using (SqlCommand cmd = new SqlCommand($"select * from dbo.{tableName}", Connection))
+            using (SqlCommand cmd = new SqlCommand($"select * from {tableName}", Connection))
             {
                 cmd.CommandType = CommandType.Text;
                 using (SqlDataReader reader = cmd.ExecuteReader())
@@ -130,16 +152,16 @@ namespace APaers.DataGen.Tests.Integration
                     Assert.AreEqual(generationOptions.RowCount, rowCount);
                 }
             }
-            ExecuteNonQuery($"drop table dbo.{tableName};");
         }
 
         [TestMethod]
         public async Task TestGenerateInsertScript_IdColumns()
         {
             // Arrange
-            const string tableName = "Test01";
+            const string tableName = "dbo.Test01";
+            tableToDrop = tableName;
             string createTableScript =
-                $"create table dbo.{tableName} (" +
+                $"create table {tableName} (" +
                 "Id int not null" +
                 ") ON [PRIMARY]";
             InsertScriptGenerationOptions generationOptions = new InsertScriptGenerationOptions { RowCount = 10 };
@@ -153,7 +175,7 @@ namespace APaers.DataGen.Tests.Integration
             Assert.IsTrue(tableInfo.Columns.Count > 0);
             string createInsertScript = createTableScript + Environment.NewLine + insertScript;
             ExecuteNonQuery(createInsertScript);
-            using (SqlCommand cmd = new SqlCommand($"select * from dbo.{tableName}", Connection))
+            using (SqlCommand cmd = new SqlCommand($"select * from {tableName}", Connection))
             {
                 cmd.CommandType = CommandType.Text;
                 using (SqlDataReader reader = cmd.ExecuteReader())
@@ -169,16 +191,16 @@ namespace APaers.DataGen.Tests.Integration
                     }
                 }
             }
-            ExecuteNonQuery($"drop table dbo.{tableName};");
         }
 
         [TestMethod]
         public async Task TestGenerateInsertScript_DifferentColumnTypes_DefaultFormats()
         {
             // Arrange
-            const string tableName = "Test01";
+            const string tableName = "dbo.Test01";
+            tableToDrop = tableName;
             string createTableScript =
-                    $"create table dbo.{tableName} (" +
+                    $"create table {tableName} (" +
                     "Id int identity(1,1) not null, " +
                     "SomeUniqueId uniqueidentifier not null, " +
                     "SomeGuid varchar(64) not null, " +
@@ -212,7 +234,7 @@ namespace APaers.DataGen.Tests.Integration
             string createInsertScript = createTableScript + Environment.NewLine + insertScript;
             ExecuteNonQuery(createInsertScript);
 
-            using (SqlCommand cmd = new SqlCommand($"select * from dbo.{tableName}", Connection))
+            using (SqlCommand cmd = new SqlCommand($"select * from {tableName}", Connection))
             {
                 cmd.CommandType = CommandType.Text;
                 using (SqlDataReader reader = cmd.ExecuteReader())
@@ -338,7 +360,6 @@ namespace APaers.DataGen.Tests.Integration
                     Assert.AreEqual(generationOptions.RowCount, rowCount);
                 }
             }
-            ExecuteNonQuery($"drop table dbo.{tableName};");
         }
     }
 }

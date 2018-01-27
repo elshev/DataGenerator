@@ -62,8 +62,8 @@ namespace APaers.DataGen.ConsoleTest
                 foreach (ColumnInfo columnInfo in tableInfo.Columns)
                 {
                     Console.WriteLine(
-                        "Name = {0}; ColumnId = {1}; Precision = {2}; Scale = {3}; IsNullable = {4}; IsIdentity = {5}; IsComputed = {6}",
-                        columnInfo.Name, columnInfo.ColumnId, columnInfo.Precision, columnInfo.Scale,
+                        "Name = {0}; Precision = {1}; Scale = {2}; IsNullable = {3}; IsIdentity = {4}; IsComputed = {5}",
+                        columnInfo.Name, columnInfo.Precision, columnInfo.Scale,
                         columnInfo.IsNullable, columnInfo.IsIdentity, columnInfo.IsComputed);
                     Console.WriteLine();
                 }

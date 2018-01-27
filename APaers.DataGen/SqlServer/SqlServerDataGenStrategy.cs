@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Antlr4.Runtime;
+using Antlr4.Runtime.Tree;
 using APaers.DataGen.Abstract.Data;
-using APaers.DataGen.Abstract.Exceptions;
 using APaers.DataGen.Abstract.Generate;
 using APaers.DataGen.Abstract.Repo;
+using APaers.DataGen.Antlr;
 using APaers.DataGen.Entities;
 using APaers.DataGen.Generate;
 using Autofac.Features.Indexed;
@@ -31,6 +31,25 @@ namespace APaers.DataGen.SqlServer
             CountryRepo = countryRepo;
         }
 
+        public async Task<TableInfo> GetTableInfoAsync(string script)
+        {
+            if (string.IsNullOrWhiteSpace(script))
+                return null;
+
+            var input = new AntlrInputStream(script);
+            var caseChangingStream = new CaseChangingCharStream(input, true);
+            var lexer = new TSqlLexer(caseChangingStream);
+            var tokens = new CommonTokenStream(lexer);
+            var parser = new TSqlParser(tokens);
+            var tree = parser.tsql_file();
+            var walker = new ParseTreeWalker();
+            var listener = new SqlListener();
+            walker.Walk(listener, tree);
+
+            return listener.TableInfo;
+        }
+
+        /*
         public async Task<TableInfo> GetTableInfoAsync(string script)
         {
             if (string.IsNullOrWhiteSpace(script))
@@ -74,7 +93,7 @@ namespace APaers.DataGen.SqlServer
                             {
                                 string columnTypeName = reader.GetFieldValue<string>(colTypeName);
                                 string columnName = reader.GetFieldValue<string>(colName);
-                                SystemColumnType systemColumnType = SqlServerToSystemColumnType(columnTypeName);
+                                SystemColumnType systemColumnType = SqlServerHelper.SqlServerToSystemColumnType(columnTypeName);
                                 ColumnInfo columnInfo = ColumnInfoHelper.CreateColumnInfo(systemColumnType, columnName);
                                 columnInfo.ColumnId = reader.GetFieldValue<int>(colColumnId);
                                 columnInfo.MaxLength = reader.GetFieldValue<Int16>(colMaxLength);
@@ -99,38 +118,7 @@ namespace APaers.DataGen.SqlServer
                 }
             }
         }
-
-        private static SystemColumnType SqlServerToSystemColumnType(string columnTypeName)
-        {
-            switch (columnTypeName.ToLower(CultureInfo.InvariantCulture))
-            {
-                case "int":
-                case "tinyint":
-                case "smallint":
-                case "bigint":
-                    return SystemColumnType.Int;
-                case "date":
-                case "time":
-                case "datetime":
-                case "datetime2":
-                case "smalldatetime":
-                    return SystemColumnType.DateTime;
-                case "bit":
-                    return SystemColumnType.Boolean;
-                case "float":
-                case "real":
-                case "decimal":
-                case "numeric":
-                    return SystemColumnType.Number;
-                case "money":
-                case "smallmoney":
-                    return SystemColumnType.Money;
-                case "uniqueidentifier":
-                    return SystemColumnType.Guid;
-                default: // "char", "nchar", "varchar", "nvarchar", "text", "ntext", "sysname"
-                    return SystemColumnType.String;
-            }
-        }
+        */
 
         protected string GenerateInsertScript(TableInfo tableInfo, InsertScriptGenerationOptions generationOptions)
         {

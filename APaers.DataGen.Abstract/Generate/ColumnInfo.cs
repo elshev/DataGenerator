@@ -18,15 +18,15 @@ namespace APaers.DataGen.Abstract.Generate
         [Required]
         public string Name { get; set; }
 
-        [Required]
-        public int ColumnId { get; set; }
-
         private int maxLength;
         public int MaxLength
         {
-            get { return maxLength; }
-            set { maxLength = value < 0 ? 0 : value; }
+            get => maxLength;
+            set => maxLength = value < 0 ? 0 : value;
         }
+
+        public int IdentitySeed { get; set; }
+        public int IdentityIncrement { get; set; }
 
         public int MaxPrecision { get; private set; }
         public void SetMaxPrecision(int value)
@@ -38,7 +38,7 @@ namespace APaers.DataGen.Abstract.Generate
         [JsonProperty(Order = 2)]
         public int Precision
         {
-            get { return precision; }
+            get => precision;
             set
             {
                 if (precision == value) return;
@@ -61,8 +61,8 @@ namespace APaers.DataGen.Abstract.Generate
         /// <summary> Null values percentage </summary>
         public byte NullPercent
         {
-            get { return nullPercent; }
-            set { nullPercent = value > 100 ? (byte)100 : value; }
+            get => nullPercent;
+            set => nullPercent = value > 100 ? (byte)100 : value;
         }
 
         private string userFormat;
@@ -71,7 +71,7 @@ namespace APaers.DataGen.Abstract.Generate
         [JsonProperty(Order = 1)]
         public string Format
         {
-            get { return userFormat ?? DefaultFormat; }
+            get => userFormat ?? DefaultFormat;
             set
             {
                 if (value != DefaultFormat)
