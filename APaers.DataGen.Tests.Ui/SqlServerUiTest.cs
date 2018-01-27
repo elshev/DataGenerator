@@ -10,6 +10,9 @@ using Protractor;
 
 namespace APaers.DataGen.Tests.Ui
 {
+    /// <summary>
+    /// To run these UI tests you need to run the site in the detached mode.
+    /// </summary>
     [TestClass]
     public class SqlServerUiTest
     {
@@ -43,9 +46,9 @@ namespace APaers.DataGen.Tests.Ui
         private void TestAddCreateTableScript()
         {
             // Arrange
-            const string tableName = "T1";
+            const string tableName = "dbo.T1";
             // Act
-            SetScriptAndCreateMetadata($"create table dbo.{tableName} (Id int not null, Name varchar(128) not null, Date datetime null);");
+            SetScriptAndCreateMetadata($"create table {tableName} (Id int not null, Name varchar(128) not null, Date datetime null);");
             // Assert
             IWebElement weMetaTable = FindOneById("metaDataTable");
             Assert.AreEqual(3, weMetaTable.FindElements(By.CssSelector("tbody > tr")).Count);
