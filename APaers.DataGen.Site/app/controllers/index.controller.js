@@ -22,6 +22,6 @@
         function logOut() {
             authService.logOut();
             $location.path("/home");
-        };
-    };
+        }
+    }
 })();

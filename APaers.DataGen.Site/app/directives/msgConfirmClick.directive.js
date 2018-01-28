@@ -12,15 +12,15 @@
             priority: -1,
             restrict: 'A',
             scope: { confirmFunction: "&msgConfirmClick" },
-            link: function (scope, element, attrs) {
+            link: function(scope, element, attrs) {
                 element.bind('click',
-                    function (e) {
+                    function(e) {
                         var message = attrs.msgConfirmClickMessage ? attrs.msgConfirmClickMessage : "Are you sure?";
                         if ($window.confirm(message)) {
                             scope.confirmFunction();
                         }
                     });
             }
-        }
-    };
+        };
+    }
 })();

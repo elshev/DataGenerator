@@ -22553,7 +22553,7 @@ public partial class TSqlParser : Parser {
 			return GetRuleContext<IdContext>(i);
 		}
 		public ITerminalNode NONE() { return GetToken(TSqlParser.NONE, 0); }
-		public ITerminalNode EMPTY() { return GetToken(TSqlParser.EMPTY, 0); }
+		public new ITerminalNode EMPTY() { return GetToken(TSqlParser.EMPTY, 0); }
 		public ITerminalNode WELL_FORMED_XML() { return GetToken(TSqlParser.WELL_FORMED_XML, 0); }
 		public ITerminalNode VALID_XML() { return GetToken(TSqlParser.VALID_XML, 0); }
 		public ITerminalNode WITH() { return GetToken(TSqlParser.WITH, 0); }
@@ -35204,7 +35204,7 @@ public partial class TSqlParser : Parser {
 		public ITerminalNode EQUAL() { return GetToken(TSqlParser.EQUAL, 0); }
 		public ITerminalNode AUTHORIZATION() { return GetToken(TSqlParser.AUTHORIZATION, 0); }
 		public ITerminalNode NONE() { return GetToken(TSqlParser.NONE, 0); }
-		public ITerminalNode EMPTY() { return GetToken(TSqlParser.EMPTY, 0); }
+		public new ITerminalNode EMPTY() { return GetToken(TSqlParser.EMPTY, 0); }
 		public ITerminalNode WELL_FORMED_XML() { return GetToken(TSqlParser.WELL_FORMED_XML, 0); }
 		public ITerminalNode VALID_XML() { return GetToken(TSqlParser.VALID_XML, 0); }
 		public ITerminalNode WITH() { return GetToken(TSqlParser.WITH, 0); }
@@ -84156,7 +84156,7 @@ public partial class TSqlParser : Parser {
 		public ITerminalNode DOCUMENT() { return GetToken(TSqlParser.DOCUMENT, 0); }
 		public ITerminalNode DYNAMIC() { return GetToken(TSqlParser.DYNAMIC, 0); }
 		public ITerminalNode EMERGENCY() { return GetToken(TSqlParser.EMERGENCY, 0); }
-		public ITerminalNode EMPTY() { return GetToken(TSqlParser.EMPTY, 0); }
+		public new ITerminalNode EMPTY() { return GetToken(TSqlParser.EMPTY, 0); }
 		public ITerminalNode ENABLE() { return GetToken(TSqlParser.ENABLE, 0); }
 		public ITerminalNode ENABLE_BROKER() { return GetToken(TSqlParser.ENABLE_BROKER, 0); }
 		public ITerminalNode ENCRYPTED_VALUE() { return GetToken(TSqlParser.ENCRYPTED_VALUE, 0); }

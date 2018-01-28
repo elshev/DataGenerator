@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +35,11 @@ namespace APaers.DataGen.SqlServer
             if (string.IsNullOrWhiteSpace(script))
                 return null;
 
+            return await Task.Run(() => GetTableInfo(script));
+        }
+
+        private TableInfo GetTableInfo(string script)
+        {
             var input = new AntlrInputStream(script);
             var caseChangingStream = new CaseChangingCharStream(input, true);
             var lexer = new TSqlLexer(caseChangingStream);

@@ -122,7 +122,7 @@
                 entityCount: vm.entityCount,
                 name: vm.tableInfo.name,
                 columns: vm.tableInfo.columns
-            }
+            };
             dataGenService.getGeneratedData(tableInfoVm, generateResultSuccess, generateResultError);
         }
 

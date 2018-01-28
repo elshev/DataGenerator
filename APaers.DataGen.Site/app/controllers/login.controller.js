@@ -38,11 +38,11 @@
                     function (response) {
                         libService.processResponse(response, vm);
                     });
-        };
+        }
 
         function register() {
             authService.saveRegistration(vm.registration, registerSuccess, registerError);
-        };
+        }
 
         function registerSuccess(data) {
             vm.loginData.userName = vm.registration.userName;
@@ -55,5 +55,5 @@
         function registerError(response) {
             libService.processResponse(response, vm, "Failed to register user due to");
         }
-    };
+    }
 })();

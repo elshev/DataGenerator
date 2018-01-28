@@ -11,5 +11,5 @@
         $locationProvider.html5Mode(true);
         $routeProvider.when("/", { templateUrl: "/app/views/home.html" });
         $routeProvider.otherwise({ redirectTo: "/" });
-    };
+    }
 })();
