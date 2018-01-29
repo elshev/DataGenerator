@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using APaers.DataGen.Abstract.Generate;
 
 namespace APaers.DataGen.SqlServer

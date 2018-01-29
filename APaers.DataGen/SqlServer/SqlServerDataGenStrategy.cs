@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Antlr4.Runtime;
 using Antlr4.Runtime.Tree;
-using APaers.DataGen.Abstract.Data;
 using APaers.DataGen.Abstract.Generate;
 using APaers.DataGen.Abstract.Repo;
 using APaers.DataGen.Antlr;
@@ -17,15 +16,12 @@ namespace APaers.DataGen.SqlServer
 {
     internal class SqlServerDataGenStrategy : IDataGenStrategy
     {
-        private IConnectionStringProvider ConnectionStringProvider { get; }
         private IIndex<ColumnType, IColumnValueStrategy> ColumnValueStrategies { get; }
         private IRepo<Country> CountryRepo { get; }
 
-        public SqlServerDataGenStrategy(IConnectionStringProvider connectionStringProvider,
-            IIndex<ColumnType, IColumnValueStrategy> columnValueStrategies,
+        public SqlServerDataGenStrategy(IIndex<ColumnType, IColumnValueStrategy> columnValueStrategies,
             IRepo<Country> countryRepo)
         {
-            ConnectionStringProvider = connectionStringProvider;
             ColumnValueStrategies = columnValueStrategies;
             CountryRepo = countryRepo;
         }
@@ -52,77 +48,6 @@ namespace APaers.DataGen.SqlServer
 
             return listener.TableInfo;
         }
-
-        /*
-        public async Task<TableInfo> GetTableInfoAsync(string script)
-        {
-            if (string.IsNullOrWhiteSpace(script))
-                return null;
-
-            string connectionString = ConnectionStringProvider.GetConnectionString();
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                const string procName = "dbo.GetMetadataFromCreateTableScript";
-                SqlParameter createTableScriptParam = new SqlParameter("@CreateTableScript", SqlDbType.NVarChar)
-                {
-                    Value = script
-                };
-                SqlParameter createdTableNameParam = new SqlParameter("@CreatedTableName", SqlDbType.NVarChar)
-                {
-                    Direction = ParameterDirection.Output,
-                    Size = 256
-                };
-                try
-                {
-                    using (SqlCommand cmd = new SqlCommand(procName, connection))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddRange(new[] { createTableScriptParam, createdTableNameParam });
-                        await connection.OpenAsync();
-                        TableInfo tableInfo = new TableInfo();
-                        using (SqlDataReader reader = await cmd.ExecuteReaderAsync(CommandBehavior.CloseConnection))
-                        {
-                            var columnInfos = new List<ColumnInfo>();
-                            int col = 0;
-                            int colName = col++;
-                            int colColumnId = col++;
-                            int colTypeName = col++;
-                            int colMaxLength = col++;
-                            int colPrecision = col++;
-                            int colScale = col++;
-                            int colIsNullable = col++;
-                            int colIsIdentity = col++;
-                            int colIsComputed = col;
-                            while (await reader.ReadAsync())
-                            {
-                                string columnTypeName = reader.GetFieldValue<string>(colTypeName);
-                                string columnName = reader.GetFieldValue<string>(colName);
-                                SystemColumnType systemColumnType = SqlServerHelper.SqlServerToSystemColumnType(columnTypeName);
-                                ColumnInfo columnInfo = ColumnInfoHelper.CreateColumnInfo(systemColumnType, columnName);
-                                columnInfo.ColumnId = reader.GetFieldValue<int>(colColumnId);
-                                columnInfo.MaxLength = reader.GetFieldValue<Int16>(colMaxLength);
-                                if (columnTypeName.ToLower(CultureInfo.InvariantCulture) == "nvarchar")
-                                    columnInfo.MaxLength /= 2;
-                                columnInfo.SetMaxPrecision(reader.GetFieldValue<byte>(colPrecision));
-                                columnInfo.Scale = reader.GetFieldValue<byte>(colScale);
-                                columnInfo.IsNullable = reader.GetFieldValue<bool>(colIsNullable);
-                                columnInfo.IsIdentity = reader.GetFieldValue<bool>(colIsIdentity);
-                                columnInfo.IsComputed = reader.GetFieldValue<bool>(colIsComputed);
-                                columnInfos.Add(columnInfo);
-                            }
-                            tableInfo.Columns = columnInfos;
-                        }
-                        tableInfo.Name = createdTableNameParam.Value.ToString();
-                        return tableInfo;
-                    }
-                }
-                catch (SqlException e)
-                {
-                    throw new DataGenExceptionBase(e.Message, e) {Reason = "Error in script"};
-                }
-            }
-        }
-        */
 
         protected string GenerateInsertScript(TableInfo tableInfo, InsertScriptGenerationOptions generationOptions)
         {
