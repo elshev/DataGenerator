@@ -148,10 +148,6 @@
       <Project>{27F83FDD-8881-48B3-A996-EFF8092D99E0}</Project>
       <Name>APaers.DataGen.Abstract</Name>
     </ProjectReference>
-    <ProjectReference Include="..\APaers.DataGen.WebApi\APaers.DataGen.WebApi.csproj">
-      <Project>{E6C02C1F-964F-4B2D-B1CF-13C1313FA6A7}</Project>
-      <Name>APaers.DataGen.WebApi</Name>
-    </ProjectReference>
     <ProjectReference Include="..\APaers.DataGen\APaers.DataGen.csproj">
       <Project>{F83E080B-069D-418E-B817-B900F7A88DA5}</Project>
       <Name>APaers.DataGen</Name>
