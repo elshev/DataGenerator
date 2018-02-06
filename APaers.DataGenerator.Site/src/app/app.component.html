@@ -1,0 +1,116 @@
+﻿<div>
+  <!-- Script -->
+  <div class="well well-sm">
+    <form id="metaScriptForm" name="metaScriptForm" novalidate #form="ngForm">
+      <div class="form-group">
+        <label id="metaScriptLabel" for="metaScriptText" class="control-label required">Type your script here</label>
+        <textarea id="metaScriptText" name="metaScriptText" rows="4" class="form-control col-xs-12"
+                  [(ngModel)]="metaScript" required minlength="1" #metaScriptText="ngModel"></textarea>
+        <div [hidden]="metaScriptText.valid || metaScriptText.pristine" class="alert alert-danger">Valid script is required</div>
+        <div id="metaScriptMessage" [hidden]="!metaScriptMessage" class="alert alert-danger">{{metaScriptMessage}}</div>
+      </div>
+      <div class="text-right">
+        <button id="createMetadataButton" class="btn btn-primary btn-label-left text-center"
+                (click)="getTableInfo()" [disabled]="!form.form.valid">
+          <span><i class="fa fa-table"></i></span>
+          <b>Create Metadata</b>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Table Info -->
+  <div class="well well-sm">
+    <div>
+      <label for="datasetName" class="control-label required">Dataset Name</label>
+      <input id="datasetName" name="datasetName" [(ngModel)]="tableInfo.name" #datasetName="ngModel">
+    </div>
+    <table id="metaDataTable" class="table table-bordered table-condensed table-striped table-hover">
+      <thead>
+      <tr>
+        <th style="width: 0.5%">#</th>
+        <th class="col-xs-2">Name</th>
+        <th class="col-xs-1">Type</th>
+        <th class="col-xs-1">Nullable</th>
+        <th class="col-xs-8">Settings</th>
+        <th style="width: 0.5%"></th>
+      </tr>
+      </thead>
+      <tbody *ngIf="tableInfo && tableInfo.columns" >
+        <tr *ngFor="let columnInfo of tableInfo.columns; let i = index">
+            <td>{{i+1}}</td>
+            <!-- Name -->
+            <td>
+                <input name="columnInfo.name" type="text" class="col-sm-12" [(ngModel)]="columnInfo.name">
+            </td>
+            <!-- Type -->
+            <td>
+              <select name="columnType" [(ngModel)]="columnInfo.columnType">
+                <option *ngFor="let columnTypeInfo of columnTypeInfos" [ngValue]="columnTypeInfo.columnType">
+                  {{columnTypeInfo.displayValue}}
+                </option>
+              </select>
+            </td>
+            <!-- Nullable -->
+            <td class="td-center">
+                <input type="checkbox" class="" [(ngModel)]="columnInfo.isNullable">
+            </td>
+            <!-- Settings -->
+<!--
+            <td>
+                <div ng-include="vm.getSettingsView(columnInfo.columnType)"></div>
+            </td>
+            &lt;!&ndash; Remove column &ndash;&gt;
+            <td class="td-center">
+                <button type="button" class="danger text-danger" aria-label="Close" ng-click="vm.deleteColumn($index)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+            </td>
+-->
+        </tr>
+      </tbody>
+    </table>
+    <label id="metaDataMessage" ng-show="vm.metaDataMessage" class="has-error text-danger" ng-bind="vm.metaDataMessage"></label>
+    <div class="text-right">
+        <button id="generateButton" class="btn btn-primary btn-label-left text-center"
+                ng-click="vm.getGeneratedData()" ng-disabled="!vm.tableInfo.columns.length > 0">
+            <span><i class="fa fa-play"></i></span>
+            <b>Generate</b>
+        </button>
+    </div>
+  </div>
+    <!-- Result -->
+<!--
+    <div class="well well-sm">
+        <label class="control-label required">Result script</label>
+        <textarea id="generatedText" name="generatedText" rows="8"
+                  class="form-control col-xs-12"
+                  ng-model="vm.generatedText" readonly></textarea>
+        <span id="generatedTextHelp" class="help-block">&nbsp;</span>
+    </div>
+-->
+</div>
+
+<!--
+<div *ngIf="isTableInfoInitialized">
+    <p>Table Info Name: {{tableInfo?.name}}</p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Type</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let column of tableInfo?.columns">
+            <td>{{column.name}}</td>
+            <td>{{column.columnType}}</td>
+            <td>{{column.systemColumnType}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="isDataGenerated">
+    <p>Generated: {{generatedData.generatedData}}</p>
+</div>
+-->
