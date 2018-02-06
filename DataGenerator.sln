@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APaers.DataGen", "APaers.DataGen\APaers.DataGen.csproj", "{F83E080B-069D-418E-B817-B900F7A88DA5}"
 EndProject
@@ -30,9 +30,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APaers.DataGen.Tests.Ui", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APaers.DataGen.Api", "APaers.DataGen.Api\APaers.DataGen.Api.csproj", "{470C20B3-2BDD-44E6-903A-E3BDDC3D51BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APaers.DataGen.Site", "APaers.DataGen.Site\APaers.DataGen.Site.csproj", "{19A274B9-5169-4CAF-B924-3287DFE6547D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APaers.DataGen.Site.AngularJs", "APaers.DataGen.Site.AngularJs\APaers.DataGen.Site.AngularJs.csproj", "{19A274B9-5169-4CAF-B924-3287DFE6547D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APaers.DataGen.Tests.Site", "APaers.DataGen.Tests.Site\APaers.DataGen.Tests.Site.csproj", "{C3004F30-3B20-473D-AC86-D9D7444D477F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APaers.DataGen.Tests.Site.AngularJs", "APaers.DataGen.Tests.Site.AngularJs\APaers.DataGen.Tests.Site.AngularJs.csproj", "{C3004F30-3B20-473D-AC86-D9D7444D477F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APaers.DataGen.Data.Json", "APaers.DataGen.Data.Json\APaers.DataGen.Data.Json.csproj", "{DC2ECE85-951D-4110-A29C-F52F2CE9210E}"
 EndProject
@@ -113,5 +113,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1948E63-A87D-4633-9A84-BE916C8DCAA9}
 	EndGlobalSection
 EndGlobal
