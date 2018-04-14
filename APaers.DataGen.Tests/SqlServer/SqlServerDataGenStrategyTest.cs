@@ -33,7 +33,7 @@ namespace APaers.DataGen.Tests.SqlServer
             countryColumnValueStrategy.Setup(vs => vs.GetValue(It.IsAny<CountryColumnInfo>(), It.IsAny<object>()))
                 .Returns(countryName);
 
-            var strategy = new SqlServerDataGenStrategy(null, columnStrategies.Object, countryRepo.Object);
+            var strategy = new SqlServerDataGenStrategy(columnStrategies.Object, countryRepo.Object);
             var tableInfo = new TableInfo
             {
                 Name = "SomeTable",

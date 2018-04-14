@@ -29,8 +29,7 @@ namespace APaers.DataGen.WebApi
         public void Application_Error(object sender, EventArgs e)
         {
             Exception exception = Server.GetLastError();
-            var application = sender as WebApiApplication;
-            if (application != null)
+            if (sender is WebApiApplication application)
             {
                 HttpRequest request = application.Request;
                 if (request.IsLocal)
