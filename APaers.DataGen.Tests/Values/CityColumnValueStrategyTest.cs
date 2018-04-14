@@ -40,7 +40,6 @@ namespace APaers.DataGen.Tests.Values
         {
             // Arrange
             const int maxLength = 2;
-            // Arrange
             var columnInfo = new CityColumnInfo {IsNullable = false, MaxLength = maxLength};
             var strategy = new CityColumnValueStrategy(RepoFactory);
             // Act

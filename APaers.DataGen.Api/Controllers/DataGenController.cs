@@ -44,7 +44,12 @@ namespace APaers.DataGen.Api.Controllers
         {
             IDataGenStrategy dataGenStrategy = DataGenStrategies[vm.SqlType];
             TableInfo tableInfo = await dataGenStrategy.GetTableInfoAsync(vm.CreateTableScript);
-            TableInfoViewModel tableInfoViewModel = new TableInfoViewModel { Name = tableInfo?.Name, Columns = tableInfo?.Columns };
+            TableInfoViewModel tableInfoViewModel = new TableInfoViewModel
+            {
+                SqlType = vm.SqlType,
+                Name = tableInfo?.Name,
+                Columns = tableInfo?.Columns
+            };
             return Ok(tableInfoViewModel);
         }
 
